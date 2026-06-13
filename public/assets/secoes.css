@@ -1,17 +1,49 @@
 .container-obras{
     display: flex;
     padding: 2rem;
+    gap: 1rem;
+    
+}
+.obras-categorias{
+    display: flex;
+    
 }
 
+/*============================================*/
+/*================INFORMACOES=================*/
 
 .titulo-categoria{
     font-size: 36px;
-    padding-bottom: 2rem;
+    
     color: var(--texto-branco);
+    padding: 2rem;
+    
 }
 
-.capa-anime img{
-    width: 20rem;
+.divider-secao{
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+}
+.classificacao-img{
+    padding: 5px;
+    position: absolute;
+    width: 3rem;
+    height: auto;
+    border-radius: 20px 0px 0px 0px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+}
+
+.capa-anime{
+    position: relative;
+}
+
+.capa-anime img:not(.classificacao-img){
+    width: 17rem;
+    height: 26rem;
     border-radius: 20px;
 }
 
@@ -19,28 +51,101 @@
 .info-obra{
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .titulo-anime{
+    display: flex;
+    justify-content: center;
     color: var(--texto-branco);
     text-decoration: none;
-    background-color: var(--cor-ref-primaria0);
-}
-
-.metadados-obra img{
-    width: 2.5rem;
+    background-color: var(--cor-ref-primaria5);
+    border-radius: 10px;
+    padding: 0.5rem;
+    
 }
 
 .metadados-obra{
     display: flex;
+    gap: 7px;
     align-items: center;
+    justify-content: center;
+    
     color: var(--cor-texto-info);
-    /*justify-content: center*/
+}
+.metadados-obra img{
+    width: 1.2rem;
+    height: 1.2rem;
+    
+}
+.metadados-obra h2{
+    display: flex;
+    font-size: 20px;
+    gap: 5px;
+}
+.metadados-obra p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.divider-metadados{
+    color: var(--cor-ref-neutro20);
 }
 
+.tipos-midia{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-texto-info);
+    background-color: var(--fundo-card);
+    border-radius: 30px;
+}
+
+/*============================================*/
+/*================CAPAS MANGA=================*/
 
 .capas-manga img{
     border-radius: 30px;
     width: 10rem;
-    border: var(--cor-ref-primaria30) solid 3px;
+    height: 14.5rem;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.7);
+    
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, margin 0.3s ease;
+}
+
+
+
+.capas-manga{
+    display: flex;
+    align-items: center;
+}
+
+
+.volume-2, .volume-3{
+    margin-left: -100px;
+}
+.volume-1{
+    z-index: 2;
+}
+.volume-2{
+    z-index: 1;
+}
+
+.volume-3{
+    z-index: 0;
+}
+
+.volume-1:hover{
+    transform: scale(105%);
+}
+
+.volume-2:hover{
+    margin-left: -60px;
+    margin-right: -40px;
+}
+.volume-3:hover{
+    margin-left: -50px;
+    margin-right: -50px; /*IMPORTANTE: esse margin-right faz com que esse conteudo (volume__3) NÃO empurre os outros conteúdos*/
+
 }

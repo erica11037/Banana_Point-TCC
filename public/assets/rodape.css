@@ -1,0 +1,59 @@
+.rodape-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-top: 2px solid #1a1622;
+    background-color: var(--cor-rodape);
+}
+
+.rodape-conteudo{
+    display: flex;
+    padding: 2rem;
+    gap: 10rem;
+    
+}
+
+.rodape-logo-bananapoint img{
+    width: 10rem;
+    padding-bottom: 2rem;
+}
+
+
+.rodape-img-plataformas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.rodape-siga-nos img{
+    width: 30px;
+    transition: 0.4s;
+}
+
+
+
+
+
+.rodape-sobre h2, .rodape-ajuda h2, .rodape-termos-e-condicoes h2, .rodape-siga-nos h2{
+    padding-bottom: 15px;
+    color: var(--cor-ref-primaria50);
+}
+.rodape-sobre a, .rodape-ajuda a, .rodape-termos-e-condicoes a, .rodape-siga-nos a{
+    text-decoration: none;
+    color: var(--texto-branco);
+}
+
+
+.rodape-siga-nos img:hover{
+    transform: scale(110%);
+}
+
+.rodape-direitos-reservados{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    background-color: var(--cor-ref-neutro5);
+    width: 100%;
+    color: #b9ac90;
+}

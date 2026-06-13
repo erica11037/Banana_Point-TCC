@@ -7,7 +7,20 @@
 /*============================================*/
 /*==========DEFININDO AS 'RAIZES'=============*/
 :root{
-    
+    --cor-ref-neutro0: #000000;
+    --cor-ref-neutro5: #0a0a0a;
+    --cor-ref-neutro10: #1C1C1C;
+    --cor-ref-neutro20: #363636;
+    --cor-ref-neutro30: #464646;
+    --cor-ref-neutro40: #5C5C5C;
+    --cor-ref-neutro50: #7B7B7B;
+    --cor-ref-neutro60: #8C8C8C;
+    --cor-ref-neutro70: #B3B3B3;
+    --cor-ref-neutro80: #D5D5D5;
+    --cor-ref-neutro90: #EDEDED;
+    --cor-ref-neutro95: #F9F9F9;
+    --cor-ref-neutro100: #FFFFFF;
+
     --cor-ref-primaria0: #0C0C0C;
     --cor-ref-primaria5: #151120;
     --cor-ref-primaria10: #27203C;
@@ -21,10 +34,12 @@
     --texto-branco: #D9DCFF;
     --texto-preto: #0e0e0e;
     --btn-banner: #27203c9d;
-    --cor-fundo: #0e0e0e;
-    --cor-subtitulo-card: #72669A;
-    --cor-cabecalho: rgba(18, 18, 18, 0.69);
+    --cor-fundo: #0a0a0a;
+    --fundo-card: #251e3d;
+    --cor-cabecalho: #0a0a0a9c;
     --cor-texto-info: #a297be;
+    --cor-rodape: #0D0D0D;
+    
 
 
     --fonte-primaria: "Poppins", sans-serif;
