@@ -159,7 +159,7 @@
     text-decoration: none;
     font-size: 15px;
     color: var(--cor-ref-primaria70);
-    background-color: var(--cor-btn-banner);
+    background-color: var(--btn-banner);
     padding: 5px 10px 5px 10px;
     border-radius: 15rem;
     transition: 0.5s;
