@@ -40,12 +40,11 @@
 .navegacao a{
     text-decoration: none;
     color: var(--texto-branco);
-    font-weight: bold;
     letter-spacing: 0.05rem;
-    transition: 0.5s;
+    transition: 0.3s;
     font-size:18px;
 }
 
 .navegacao a:hover{
-    color: var(--cor-ref-primaria70);
+    color: var(--cor-ref-primaria60);
 }

@@ -51,7 +51,13 @@
     height: auto;
 }
 
+.demon-logo{
+    width: 20rem;
+}
 
+.cowboy-logo{
+    width: 25rem;
+}
 
 
 .slide-container::before{
@@ -112,7 +118,7 @@
 
 
 #radio3:checked ~ .primeiro{
-    margin-left: -0%;
+    margin-left: -40%;
 }
 
 
@@ -125,7 +131,8 @@
     margin-left: -80%;
 }
 
-
+/*============================================*/
+/*======conteudos dentro dos slides==========*/
 
 .avaliacao-banner{
     display: flex;
@@ -213,4 +220,14 @@ transform: scale(110%);
     text-decoration: none;
     font-weight: bold;
     color: var(--cor-ref-primaria40);
+}
+
+.btn-assista-agora:hover{
+    background-color: var(--cor-ref-primaria60);
+    transform: scale(110%);
+}
+
+.btn-saiba-mais:hover{
+    background-color: var(--cor-ref-primaria80);
+    transform: scale(110%);
 }
