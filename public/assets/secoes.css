@@ -1,0 +1,46 @@
+.container-obras{
+    display: flex;
+    padding: 2rem;
+}
+
+
+.titulo-categoria{
+    font-size: 36px;
+    padding-bottom: 2rem;
+    color: var(--texto-branco);
+}
+
+.capa-anime img{
+    width: 20rem;
+    border-radius: 20px;
+}
+
+
+.info-obra{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-anime{
+    color: var(--texto-branco);
+    text-decoration: none;
+    background-color: var(--cor-ref-primaria0);
+}
+
+.metadados-obra img{
+    width: 2.5rem;
+}
+
+.metadados-obra{
+    display: flex;
+    align-items: center;
+    color: var(--cor-texto-info);
+    /*justify-content: center*/
+}
+
+
+.capas-manga img{
+    border-radius: 30px;
+    width: 10rem;
+    border: var(--cor-ref-primaria30) solid 3px;
+}

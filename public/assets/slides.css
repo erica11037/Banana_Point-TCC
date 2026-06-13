@@ -35,29 +35,6 @@
     min-width: 20%;
 }
 
-.slide-info{
-    display: flex;
-    position: relative;
-    z-index: 2;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 45rem;
-    align-items: flex-start;
-    
-}
-
-.logo-banners{
-    width: 30rem;
-    height: auto;
-}
-
-.demon-logo{
-    width: 20rem;
-}
-
-.cowboy-logo{
-    width: 25rem;
-}
 
 
 .slide-container::before{
@@ -72,6 +49,9 @@
     linear-gradient(to top, rgba(14, 14, 14, 1) 0%, rgba(14, 14, 14, 0) 30%);
     z-index: 1;
 }
+
+/*============================================*/
+/*==================botões===================*/
 
 
 .nav-manual{
@@ -97,6 +77,9 @@
 .manual-btn:hover{
     background-color: var(--cor-ref-primaria40);
 }
+/*============================================*/
+/*======Mantem os slides funcionando==========*/
+
 
 #radio1:checked ~ .nav-manual [for="radio1"],
 #radio2:checked ~ .nav-manual [for="radio2"],
@@ -134,6 +117,30 @@
 /*============================================*/
 /*======conteudos dentro dos slides==========*/
 
+.slide-info{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45rem;
+    align-items: flex-start;
+    
+}
+
+.logo-banners{
+    width: 30rem;
+    height: auto;
+}
+
+.demon-logo{
+    width: 20rem;
+}
+
+.cowboy-logo{
+    width: 25rem;
+}
+
 .avaliacao-banner{
     display: flex;
     align-items: center;
@@ -149,7 +156,7 @@
 }
 
 .info-banner{
-    color: var(--hover-info-banner);
+    color: var(--cor-texto-info);
 }
 
 .lista-categoria-banner{
