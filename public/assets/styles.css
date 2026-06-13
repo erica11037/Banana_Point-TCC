@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/*============================================*/
+/*==========DEFININDO AS 'RAIZES'=============*/
+:root{
+    
+    --cor-ref-primaria0: #0C0C0C;
+    --cor-ref-primaria5: #151120;
+    --cor-ref-primaria10: #27203C;
+    --cor-ref-primaria20: #3D3262;
+    --cor-ref-primaria30: #5D43AA;
+    --cor-ref-primaria40: #633DD4;
+    --cor-ref-primaria50: #7456CE;
+    --cor-ref-primaria60: #997CF0;
+    --cor-ref-primaria70: #BFAFF3;
+    --cor-ref-primaria80: #EBE5FF;
+    --texto-branco: #D9DCFF;
+    --texto-preto: #0e0e0e;
+    --btn-banner: #27203c9d;
+    --cor-fundo: #0e0e0e;
+    --cor-divisoes: #72669A;
+    --cor-cabecalho: rgba(18, 18, 18, 0.69);
+    --hover-info-banner: #71688a;
+
+
+    --fonte-primaria: "Poppins", sans-serif;
+
+}
+/*============================================*/
+/*=============CORPO GERAL===================*/
+
+body{
+    background-color: var(--cor-fundo);
+}

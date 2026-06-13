@@ -1,0 +1,51 @@
+
+
+
+/*============================================*/
+/*===============cabecalho====================*/
+
+.cabecalho-container{
+    display: flex;
+    position: fixed;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-cabecalho);
+    z-index: 100;
+    width: 100%;
+    
+    border-bottom: var(--cor-ref-primaria70)1px solid;
+}
+.logo-img{
+    width: 13rem;
+    padding: 10px ;
+}
+
+.usuario-acoes{
+    display: flex;
+    padding-right: 20px;
+    gap: 1.5rem;
+}
+.usuario-acoes img{
+    width: 3rem;
+    
+}
+
+.navegacao{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: var(--texto-branco);
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+    font-size:18px;
+}
+
+.navegacao a:hover{
+    color: var(--cor-ref-primaria70);
+}

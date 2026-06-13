@@ -1,0 +1,216 @@
+
+/*============================================*/
+/*==========slideshow(carrossel)==============*/
+.slider{
+    position: relative; /*permite posicionar os elementos dentro dele*/
+    width: 100%; /*Ocupa toda a largura*/
+    height: 800px;
+    overflow: hidden;
+
+}
+
+.slider-conteudo{
+    width: 500%; /*equivalente aos 5 slides*/
+    height: 800px;
+    display: flex; /*faz com que os slides fiquem em linha*/
+}
+.slider-conteudo input{
+    display: none;
+}
+
+
+.slide-container{
+    display: flex;
+    width: 20%; /*equivalente a 1 slide*/;
+    position: relative;
+    background-size: cover;
+    background-position: center 30%;
+    transition: 1s;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end;
+    padding: 0 0 5rem 5rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    min-width: 20%;
+}
+
+.slide-info{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45rem;
+    align-items: flex-start;
+    
+}
+
+.logo-banners{
+    width: 30rem;
+    height: auto;
+}
+
+
+
+
+.slide-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(to right, rgba(14, 14, 14, 0.7) 10%, rgba(14, 14, 14, 0.4) 30%, rgba(14, 14, 14, 0) 50%), 
+    linear-gradient(to top, rgba(14, 14, 14, 1) 0%, rgba(14, 14, 14, 0) 30%);
+    z-index: 1;
+}
+
+
+.nav-manual{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 3%;
+    justify-content: center;
+}
+
+.manual-btn{
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 50px;
+    height: 6px;
+    background-color: var(--cor-ref-primaria70);
+    border: none;
+    z-index: 2;
+    margin-right: 0.5rem;
+}
+
+.manual-btn:hover{
+    background-color: var(--cor-ref-primaria40);
+}
+
+#radio1:checked ~ .nav-manual [for="radio1"],
+#radio2:checked ~ .nav-manual [for="radio2"],
+#radio3:checked ~ .nav-manual [for="radio3"],
+#radio4:checked ~ .nav-manual [for="radio4"],
+#radio5:checked ~ .nav-manual [for="radio5"] {
+    background-color: var(--cor-ref-primaria40) !important;
+}
+
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+
+#radio2:checked ~ .primeiro{
+    margin-left: -20%;
+}
+
+
+#radio3:checked ~ .primeiro{
+    margin-left: -0%;
+}
+
+
+#radio4:checked ~ .primeiro{
+    margin-left: -60%;
+}
+
+
+#radio5:checked ~ .primeiro{
+    margin-left: -80%;
+}
+
+
+
+.avaliacao-banner{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.avaliacao-texto{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--texto-branco);
+    
+}
+
+.info-banner{
+    color: var(--hover-info-banner);
+}
+
+.lista-categoria-banner{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.btn-categoria-banner{
+    transition: 0.5s;
+}
+
+.btn-categoria-banner a{
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--cor-ref-primaria70);
+    background-color: var(--cor-btn-banner);
+    padding: 5px 10px 5px 10px;
+    border-radius: 15rem;
+    transition: 0.5s;
+
+}
+
+.btn-categoria-banner:hover{
+transform: scale(110%);
+
+}
+
+
+.descricao-banner{
+    color: var(--texto-branco);
+    font-size: 1rem;
+    width: 100%;
+}
+.btn-acoes{
+    display: flex;
+    gap: 1.5rem;
+}
+.btn-acoes img{
+    width: 1.5rem;
+}
+
+.btn-assista-agora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 40px;
+    gap: 0.5rem;
+    width: 13rem;
+    transition: 0.3s;
+    background-color: var(--cor-ref-primaria30);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--texto-branco);
+}
+
+.btn-saiba-mais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 40px;
+    gap: 0.5rem;
+    width: 13rem;
+    transition: 0.3s;
+    background-color: var(--cor-ref-primaria70);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-ref-primaria40);
+}
