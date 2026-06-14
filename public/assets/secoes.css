@@ -26,7 +26,8 @@
 
 }
 .classificacao-img{
-    padding: 5px;
+    border: var(--cor-ref-primaria50) 2px c;
+    
     position: absolute;
     width: 3rem;
     height: auto;
@@ -148,4 +149,70 @@
     margin-left: -50px;
     margin-right: -50px; /*IMPORTANTE: esse margin-right faz com que esse conteudo (volume__3) NÃO empurre os outros conteúdos*/
 
+}
+
+/*============================================*/
+/*============CONTINUE ASSISTINDO=============*/
+
+
+.container-continue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+.info-continue-assistindo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--cor-ref-primaria5);
+    width: 95%;
+    border-radius: 10px;
+    padding: 40px;
+    border: var(--cor-ref-primaria30) 2px solid;
+}
+
+
+.img-continue-assistindo img{
+    width: 50px;
+}
+.titulo-continue-assistindo{
+    display: flex;
+    color: var(--cor-texto-info);
+}
+.descricao-continue-assistindo{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+    color: var(--cor-texto-info);
+}
+
+.btn-explore{
+    border: none;
+    padding: 15px 20px 15px 20px;
+    color: var(--texto-branco);
+    background-color: var(--cor-ref-primaria50);
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid var(--cor-ref-primaria50);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.btn-explore:hover{
+    border: 2px solid var(--cor-ref-primaria70);
+    background-color: transparent;
+}
+
+.img-continue-assistindo{
+    padding: 2px;
+    transition: 1s;
+}
+.img-continue-assistindo:hover{
+    transform:rotate(360deg)
 }

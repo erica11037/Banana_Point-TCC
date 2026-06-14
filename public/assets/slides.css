@@ -54,24 +54,32 @@
 /*==================botões===================*/
 
 
-.nav-manual{
+.nav-manual, .nav-auto{
     display: flex;
     position: absolute;
     width: 100%;
     bottom: 3%;
     justify-content: center;
 }
-
 .manual-btn{
+    background-color: var(--cor-ref-primaria70);
+    z-index: 2;
+
+}
+
+.manual-btn, .nav-auto div{
     border-radius: 1rem;
     cursor: pointer;
     transition: 0.2s;
     width: 50px;
     height: 6px;
-    background-color: var(--cor-ref-primaria70);
     border: none;
-    z-index: 2;
     margin-right: 0.5rem;
+    
+}
+.nav-manual, .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 0.5%;
+    
 }
 
 .manual-btn:hover{
@@ -81,12 +89,20 @@
 /*======Mantem os slides funcionando==========*/
 
 
-#radio1:checked ~ .nav-manual [for="radio1"],
-#radio2:checked ~ .nav-manual [for="radio2"],
-#radio3:checked ~ .nav-manual [for="radio3"],
-#radio4:checked ~ .nav-manual [for="radio4"],
-#radio5:checked ~ .nav-manual [for="radio5"] {
-    background-color: var(--cor-ref-primaria40) !important;
+#radio1:checked ~ .nav-auto .auto-btn1, #radio1:checked ~ .nav-manual [for="radio1"] {
+    background-color: var(--cor-ref-primaria40);
+}
+#radio2:checked ~ .nav-auto .auto-btn2, #radio2:checked ~ .nav-manual [for="radio2"] {
+    background-color: var(--cor-ref-primaria40);
+}
+#radio3:checked ~ .nav-auto .auto-btn3, #radio3:checked ~ .nav-manual [for="radio3"] {
+    background-color: var(--cor-ref-primaria40);
+}
+#radio4:checked ~ .nav-auto .auto-btn4, #radio4:checked ~ .nav-manual [for="radio4"] {
+    background-color: var(--cor-ref-primaria40);
+}
+#radio5:checked ~ .nav-auto .auto-btn5, #radio5:checked ~ .nav-manual [for="radio5"] {
+    background-color: var(--cor-ref-primaria40);
 }
 
 
@@ -181,7 +197,7 @@
     color: var(--cor-ref-primaria70);
     background-color: var(--btn-banner);
     padding: 5px 10px 5px 10px;
-    border-radius: 15rem;
+    border-radius: 15px;
     transition: 0.5s;
 
 }
@@ -205,35 +221,31 @@ transform: scale(110%);
     width: 1.5rem;
 }
 
-.btn-assista-agora{
+.btn-assista-agora, .btn-saiba-mais{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.8rem;
-    border-radius: 40px;
+    border-radius: 10px;
     gap: 0.5rem;
     width: 13rem;
     transition: 0.3s;
-    background-color: var(--cor-ref-primaria30);
     text-decoration: none;
     font-weight: bold;
+    
+}
+
+.btn-assista-agora{
+    background-color: var(--cor-ref-primaria40);
     color: var(--texto-branco);
 }
 
 .btn-saiba-mais{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem;
-    border-radius: 40px;
-    gap: 0.5rem;
-    width: 13rem;
-    transition: 0.3s;
-    background-color: var(--cor-ref-primaria70);
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor-ref-primaria40);
+    border: var(--cor-ref-primaria70) 2px solid;
+    color: var(--cor-ref-primaria70);
 }
+
+
 
 .btn-assista-agora:hover{
     background-color: var(--cor-ref-primaria60);
@@ -241,6 +253,6 @@ transform: scale(110%);
 }
 
 .btn-saiba-mais:hover{
-    background-color: var(--cor-ref-primaria80);
+    border: var(--cor-ref-primaria70) 2px solid;
     transform: scale(110%);
 }
