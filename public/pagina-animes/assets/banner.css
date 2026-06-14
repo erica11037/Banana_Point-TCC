@@ -1,0 +1,120 @@
+.banner{
+    display: flex;
+    width: 100%; /*equivalente a 1 slide*/;
+    height: 800px;
+    position: relative;
+    background-size: cover;
+    background-position: center 30%;
+    transition: 1s;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end;
+    padding: 0 0 5rem 5rem;
+    background-repeat: no-repeat;
+    
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(to right, #0a0a0a 10%, #0a0a0a66 30%, #0e0e0e00 50%), 
+    linear-gradient(to top, #0a0a0a 0%, #0e0e0e00 10%);
+    z-index: 1;
+}
+.banner-info{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45rem;
+    align-items: flex-start;
+    
+}
+
+.logo-banner{
+    width: 30rem;
+    height: auto;
+}
+
+
+
+.btn-acoes{
+    display: flex;
+    gap: 1.5rem;
+}
+.btn-acoes img{
+    width: 1.5rem;
+}
+
+.btn-assistir, .btn-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 10px;
+    gap: 0.5rem;
+    width: 13rem;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.btn-assistir{
+    background-color: var(--cor-ref-primaria40);
+    color: var(--texto-branco);
+}
+
+.btn-lista{
+    background: none;
+    border: var(--cor-ref-primaria70) 2px solid;
+    color: var(--cor-ref-primaria70);
+}
+
+
+
+.btn-assistir:hover{
+    background-color: var(--cor-ref-primaria60);
+    transform: scale(110%);
+}
+
+.btn-lista:hover{
+    
+    border: var(--cor-ref-primaria70) 2px solid;
+    transform: scale(110%);
+}
+
+
+
+
+.metadados-banner{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.descricao-banner{
+    color: var(--texto-branco);
+}
+
+.informacoes-obra{
+    display: flex;
+    gap: 10px;
+    color: var(--cor-texto-info);
+    align-items: end;
+}
+
+.opcao-exibicao{
+    display: flex;
+    align-items: center;
+    color: var(--cor-texto-info);
+    background-color: var(--fundo-card);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+}
