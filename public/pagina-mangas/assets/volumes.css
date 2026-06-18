@@ -1,0 +1,32 @@
+:root{
+    --cor-subtitulo-volume: #7c7e9c;
+}
+
+.info-volumes{
+    max-width: 12rem;
+}
+.info-volumes img{
+    width: 12rem;
+    height: 17rem;
+    border-radius: 10px;
+    
+}
+
+.info-volumes h2{
+    color: var(--texto-branco);
+}
+
+.info-volumes p{
+    color: var(--cor-subtitulo-volume);
+}
+
+.volumes-selecionar{
+    padding: 70px;
+}
+
+
+.volumes{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
