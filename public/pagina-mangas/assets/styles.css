@@ -1,0 +1,7 @@
+.manga-container{
+    display: none;
+}
+
+.manga-container:target{
+    display: block !important;
+}
