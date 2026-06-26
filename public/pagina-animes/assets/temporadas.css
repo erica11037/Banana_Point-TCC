@@ -1,0 +1,54 @@
+.temporadas-conteudos{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-ref-primaria5);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--cor-ref-primaria50);
+    gap: 5px;
+}
+
+.episodios-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.temporadas-conteudos button{
+    background-color: var(--cor-ref-primaria40);
+    border: none;
+    color: var(--texto-branco);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.episodio img{
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+}
+.episodio{
+    background-color: #130f1a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.episodio h4{
+    color: var(--cor-ref-primaria70);
+
+}
+
+.episodio p{
+    color: #7b688d;
+    font-weight: 600;
+    font-size: 15px;
+    max-width: 200px;
+}
+.temporadas-container h2{
+    color: var(--texto-branco);
+    padding-bottom: 1.5rem;
+    
+}

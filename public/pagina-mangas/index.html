@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./assets/banner.css">
     <link rel="stylesheet" href="./assets/volumes.css">
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/abas.css">
     <script src="../assets/script.js" defer></script>
-    <title>Bnanana Point | Categorias </title>
-    <link rel="shortcut icon" href="./img/BananaPoint.ico" type="image/x-icon">
+    <title>Banana Point | Categorias </title>
+    <link rel="shortcut icon" href="../img/banana-_1_.ico" type="image/x-icon">
 </head>
 <body>
     <!--==========================================-->
@@ -32,15 +33,17 @@
             <a href="#"><img src="../img/icones/icone-perfil.png" alt="Perfil"></a>
         </div>
     </div>
+    
     <!--==========================================-->
     <!--==========================================-->
-
-    <!-------------------!!-------------------------->
-
-    <section id="csm" class="manga-container">
+    
+    <!-------------------!!CHAINSAW MAN-------------------------->
+    
+    <section id="chainsaw-man" class="manga-container">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner csm-banner" style="background-image: url(./banners/banner-chainsaw-man.png);">
             <div class="banner-info">
-                <img class="capa-banner" src="../img/capas/capas-manga/chainsaw-man-vol-1.png" alt="Chainsaw Man volume 1">
+                <img class="capa-banner" src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-1.png" alt="Chainsaw Man volume 1">
                 <div class="metadados">
                     <div class="titulo-autor">
                         <h1>Chainsaw Man</h1>
@@ -75,94 +78,192 @@
                         </div>
                     </div>
                     <div class="btn-selecao">
-                        <button class="btn-ler">LER DO INÍCIO</button>
-                        <button class="btn-selecao-volume">VOLUME 1 </button>
+                        <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
+                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
                     </div>
                 </div>
         
             </div>
         </div>
-        <div class="volumes-selecionar">
-            <div class="volumes">
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol-1.png" alt="Volume 1">
-                    <h2>Cão e Motosserra</h2>
-                    <p>Vol. 1</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol-2.png" alt="Volume 2">
-                    <h2>Motosserra vs. Morcego</h2>
-                    <p>Vol. 2</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol-3.png" alt="Volume 3">
-                    <h2>Mate Denji</h2>
-                    <p>Vol. 3</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol4.webp" alt="Volume 4">
-                    <h2>A arma é a mais poderosa</h2>
-                    <p>Vol. 4</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol5.webp" alt="Volume 5">
-                    <h2>Menor</h2>
-                    <p>Vol. 5</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol6.webp" alt="Volume 6">
-                    <h2>Boom Boom Boom</h2>
-                    <p>Vol. 6</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol7.webp" alt="Volume 7">
-                    <h2>Em um sonho</h2>
-                    <p>Vol. 7</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol8.webp" alt="Volume 8">
-                    <h2>Super Bagunça</h2>
-                    <p>Vol. 8</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol9.webp" alt="Volume 9">
-                    <h2>Cão e Motosserra</h2>
-                    <p>Vol. 9</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol10.webp" alt="Volume 10">
-                    <h2>Motosserra vs. Morcego</h2>
-                    <p>Vol. 2</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol11.webp" alt="Volume 11">
-                    <h2>Mate Denji</h2>
-                    <p>Vol. 3</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol12.webp" alt="Volume 12">
-                    <h2>A arma é a mais poderosa</h2>
-                    <p>Vol. 4</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol13.webp" alt="Volume 13">
-                    <h2>Menor</h2>
-                    <p>Vol. 5</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol14.webp" alt="Volume 14">
-                    <h2>Boom Boom Boom</h2>
-                    <p>Vol. 6</p>
-                </div>
         
+
+        <section class="container-manga">
+            <input type="radio" name="abas-csm" id="csm-volumes" checked>
+            <input type="radio" name="abas-csm" id="csm-saiba">
+            <input type="radio" name="abas-csm" id="csm-anime">
+            <div class="acoes-manga">
+                <label for="csm-volumes" class="btn-aba">VOLUMES</label>
+                <label for="csm-saiba" class="btn-aba">SAIBA MAIS</label>
+                <label for="csm-anime" class="btn-aba"><a href="../pagina-animes/chainsaw-filme.html">VER O ANIME <img src="../img/icones/icon-redirecionar.png" alt="redirecionar" width="19px"></a></label>
             </div>
-        </div>
+            <hr color="#1a1622">
+
+            <div class="volumes-selecionar">
+                <div class="volumes">
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-1.png" alt="Volume 1" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Cão e Motosserra</h2>
+                            <p>Vol. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-2.png" alt="Volume 2" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Motosserra vs. Morcego</h2>
+                            <p>Vol. 2</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-3.png" alt="Volume 3" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Mate Denji</h2>
+                            <p>Vol. 3</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-4.png" alt="Volume 4" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>A arma é mais poderosa</h2>
+                            <p>Vol. 4</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-5.png" alt="Volume 5" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Menor</h2>
+                            <p>Vol. 5</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-6.png" alt="Volume 6" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Boom Boom Boom</h2>
+                            <p>Vol. 6</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-7.png" alt="Volume 7" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Em um sonho</h2>
+                            <p>Vol. 7</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-8.png" alt="Volume 8" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Super bagunça</h2>
+                            <p>Vol. 8</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-9.png" alt="Volume 9" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Banho</h2>
+                            <p>Vol. 9</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-10.png" alt="Volume 10" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Os sentimentos de um cachorro</h2>
+                            <p>Vol. 10</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-11.png" alt="Volume 11" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Vai lá, Homem da Motosserra!</h2>
+                            <p>Vol. 11</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-12.png" alt="Volume 12" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Pássaro e Guerra</h2>
+                            <p>Vol. 12</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-13.png" alt="Volume 13" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Spoiler</h2>
+                            <p>Vol. 13</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-14.png" alt="Volume 14" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Quero ver pinguins!</h2>
+                            <p>Vol. 14</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-15.png" alt="Volume 15" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Aperitivos</h2>
+                            <p>Vol. 15</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="saiba-mais">
+                <div class="saiba-mais-conteudo">
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Denji é um adolescente que mora com Pochita, o Demônio da Motosserra. Por conta das dívidas que herdou de seu pai, ele vive na miséria, exterminando outros demônios com Pochita para pagar as contas. Até que, um dia, Denji é traído e morre. Em seus últimos momentos de consciência, ele firma um contrato com Pochita e renasce como o Homem-Motosserra - um humano com coração de demônio.</p>
+                    </div>
+                    <div class="informacoes">
+                        <h2>Informações</h2>
+                        <div class="informacoes-saiba-mais">
+                            <p>Escrito e Ilustrado por:</p>
+                            <p>Tatsuki Fujimoto</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração:</p>
+                            <p>Shueisha</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração lusófona:</p>
+                            <p>BR Panini Comics | PT Editora Devir</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Selo Editorial:</p>
+                            <p>Jump Comics</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Demografia:</p>
+                            <p>Shonen</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Período de publicação:</p>
+                            <p>3 de dezembro de 2018 - 24 de Março de 2026</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Volumes:</p>
+                            <p>24</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Capítulos:</p>
+                            <p>232</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
+    <!--==========================================-->
+    <!--==========================================-->
+    
+    <!-------------------!!DANDADAN-------------------------->
+
     <section id="dandadan" class="manga-container">
-        <div class="banner ddd-banner" style="background-image: url(./banners/banner-dandadan.png);">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
+        <div class="banner" style="background-image: url(./banners/banner-dandadan.png);">
             <div class="banner-info">
-                <img class="capa-banner" src="../img/capas/capas-manga/dandadan-vol1.png" alt="Dandadan volume 1">
+                <img class="capa-banner" src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Dandadan volume 1">
                 <div class="metadados">
                     <div class="titulo-autor">
                         <h1>Dandadan</h1>
@@ -171,17 +272,17 @@
                     <div class="avaliacao">
                         <img src="../img/icones/icone-estrela.png" alt="Avaliação">
                         <p>8,4/10</p>
-                        <p class="total-avaliacao">(79.7k)</p>
+                        <p class="total-avaliacao">(79.8k)</p>
                     </div>
                     <div class="btn-categorias">
-                        <button>Fantasia Sombria</button>
-                        <button>Açao</button>
-                        <button>Comédia</button>
+                        <button>Ação</button>
+                        <button>Comédia Romântica</button>
+                        <button>Suspense</button>
                     </div>
                     <div class="informacoes-manga">
                         <div class="info-item">
                             <p>Status: </p>
-                            <p>Em lançamento</p>
+                            <p>em lançamento</p>
                         </div>
                         <div class="info-item">
                             <p>Volumes: </p>
@@ -189,7 +290,7 @@
                         </div>
                         <div class="info-item">
                             <p>Capítulos: </p>
-                            <p>232</p>
+                            <p>230</p>
                         </div>
                         <div class="info-item">
                             <p>Publicado por:</p>
@@ -197,86 +298,1094 @@
                         </div>
                     </div>
                     <div class="btn-selecao">
-                        <button class="btn-ler">LER DO INÍCIO</button>
-                        <button class="btn-selecao-volume">VOLUME 1 </button>
+                        <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
+                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
                     </div>
                 </div>
         
             </div>
         </div>
-        <div class="volumes-selecionar">
-            <div class="volumes">
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol-1.png" alt="Volume 1">
-                    <h2>Cão e Motosserra</h2>
-                    <p>Vol. 1</p>
+        
+
+        <section class="container-manga">
+            <input type="radio" name="abas-ddd" id="ddd-volumes" checked>
+            <input type="radio" name="abas-ddd" id="ddd-saiba">
+            <input type="radio" name="abas-ddd" id="ddd-anime">
+            <div class="acoes-manga">
+                <label for="ddd-volumes" class="btn-aba">VOLUMES</label>
+                <label for="ddd-saiba" class="btn-aba">SAIBA MAIS</label>
+                <label for="ddd-anime" class="btn-aba"><a href="../pagina-animes/chainsaw-filme.html">VER O ANIME <img src="../img/icones/icon-redirecionar.png" alt="redirecionar" width="19px"></a></label>
+            </div>
+            <hr color="#1a1622">
+
+            <div class="volumes-selecionar">
+                <div class="volumes">
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Volume 1" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [1]</h2>
+                            <p>Vol. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-2.png" alt="Volume 2" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [2]</h2>
+                            <p>Vol. 2</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-3.png" alt="Volume 3" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [3]</h2>
+                            <p>Vol. 3</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-4.png" alt="Volume 4" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [4]</h2>
+                            <p>Vol. 4</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-5.png" alt="Volume 5" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [5]</h2>
+                            <p>Vol. 5</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-6.png" alt="Volume 6" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [6]</h2>
+                            <p>Vol. 6</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-7.png" alt="Volume 7" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [7]</h2>
+                            <p>Vol. 7</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-8.png" alt="Volume 8" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [8]</h2>
+                            <p>Vol. 8</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-9.png" alt="Volume 9" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [9]</h2>
+                            <p>Vol. 9</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-10.png" alt="Volume 10" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [10]</h2>
+                            <p>Vol. 10</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-11.png" alt="Volume 11" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [11]</h2>
+                            <p>Vol. 11</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-12.png" alt="Volume 12" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [12]</h2>
+                            <p>Vol. 12</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-13.png" alt="Volume 13" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [13]</h2>
+                            <p>Vol. 13</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-14.png" alt="Volume 14" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [14]</h2>
+                            <p>Vol. 14</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-15.png" alt="Volume 15" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [15]</h2>
+                            <p>Vol. 15</p>
+                        </div>
+                    </div>
+            
                 </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol-2.png" alt="Volume 2">
-                    <h2>Motosserra vs. Morcego</h2>
-                    <p>Vol. 2</p>
+            </div>
+            <div class="saiba-mais">
+                <div class="saiba-mais-conteudo">
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Dandadan acompanha Momo Ayase, uma garota que acredita em fantasmas, e seu colega de classe "Okarun", um jovem obcecado por alienígenas. Eles se desafiam para provar a existência de suas crenças, mas acabam descobrindo que tanto espíritos quanto extraterrestres são reais, mergulhando em uma aventura sobrenatural caótica e cheia de ação.</p>
+                    </div>
+                    <div class="informacoes">
+                        <h2>Informações</h2>
+                        <div class="informacoes-saiba-mais">
+                            <p>Escrito e Ilustrado por:</p>
+                            <p>Yukinobu Tatsu</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração:</p>
+                            <p>Shueisha</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração lusófona:</p>
+                            <p>BR Panini Comics</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Selo Editorial:</p>
+                            <p>Jump Comics+</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Demografia:</p>
+                            <p>Shonen</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Período de publicação:</p>
+                            <p>6 de abril de 2021 - presente</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Volumes:</p>
+                            <p>24</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Capítulos:</p>
+                            <p>230</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol-3.png" alt="Volume 3">
-                    <h2>Mate Denji</h2>
-                    <p>Vol. 3</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol4.webp" alt="Volume 4">
-                    <h2>A arma é a mais poderosa</h2>
-                    <p>Vol. 4</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol5.webp" alt="Volume 5">
-                    <h2>Menor</h2>
-                    <p>Vol. 5</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol6.webp" alt="Volume 6">
-                    <h2>Boom Boom Boom</h2>
-                    <p>Vol. 6</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol7.webp" alt="Volume 7">
-                    <h2>Em um sonho</h2>
-                    <p>Vol. 7</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol8.webp" alt="Volume 8">
-                    <h2>Super Bagunça</h2>
-                    <p>Vol. 8</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol9.webp" alt="Volume 9">
-                    <h2>Cão e Motosserra</h2>
-                    <p>Vol. 9</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol10.webp" alt="Volume 10">
-                    <h2>Motosserra vs. Morcego</h2>
-                    <p>Vol. 2</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol11.webp" alt="Volume 11">
-                    <h2>Mate Denji</h2>
-                    <p>Vol. 3</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol12.webp" alt="Volume 12">
-                    <h2>A arma é a mais poderosa</h2>
-                    <p>Vol. 4</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol13.webp" alt="Volume 13">
-                    <h2>Menor</h2>
-                    <p>Vol. 5</p>
-                </div>
-                <div class="info-volumes">
-                    <img src="../img/capas/capas-manga/chainsaw-man-vol14.webp" alt="Volume 14">
-                    <h2>Boom Boom Boom</h2>
-                    <p>Vol. 6</p>
+            </div>
+            
+        </section>
+    </section>
+
+    <!--==========================================-->
+    <!--==========================================-->
+    
+    <!-------------------!!JUJUTSU KAISEN-------------------------->
+
+    <section id="jujutsu-kaisen" class="manga-container">
+        <div class="voltar-btn"><a href="../index.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
+        <div class="banner" style="background-image: url(./banners/banner-jujutsu-kaisen.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol1.png" alt="Jujutsu Kaisen volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor">
+                        <h1>Jujutsu Kaisen</h1>
+                        <h2>Gege Akutami</h2>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="../img/icones/icone-estrela.png" alt="Avaliação">
+                        <p>8,1/10</p>
+                        <p class="total-avaliacao">(266.5k)</p>
+                    </div>
+                    <div class="btn-categorias">
+                        <button>Aventura</button>
+                        <button>Fantasia Sombria</button>
+                        <button>Sobrenatural</button>
+                    </div>
+                    <div class="informacoes-manga">
+                        <div class="info-item">
+                            <p>Status: </p>
+                            <p>Finalizado</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Volumes: </p>
+                            <p>30</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Capítulos: </p>
+                            <p>272</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Publicado por:</p>
+                            <p>Panini Comics</p>
+                        </div>
+                    </div>
+                    <div class="btn-selecao">
+                        <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
+                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                    </div>
                 </div>
         
             </div>
         </div>
+        
+
+        <section class="container-manga">
+            <input type="radio" name="abas-jjk" id="jjk-volumes" checked>
+            <input type="radio" name="abas-jjk" id="jjk-saiba">
+            <input type="radio" name="abas-jjk" id="jjk-anime">
+            <div class="acoes-manga">
+                <label for="jjk-volumes" class="btn-aba">VOLUMES</label>
+                <label for="jjk-saiba" class="btn-aba">SAIBA MAIS</label>
+                <label for="jjk-anime" class="btn-aba"><a href="../pagina-animes/index.html#jujutsu-kaisen">VER O ANIME <img src="../img/icones/icon-redirecionar.png" alt="redirecionar" width="19px"></a></label>
+            </div>
+            <hr color="#1a1622">
+
+            <div class="volumes-selecionar">
+                <div class="volumes">
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol0.png" alt="Volume 0" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>O Menino Amaldiçoado</h2>
+                            <p>Vol. 0</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol1.png" alt="Volume 1" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Ryomen Sukuna</h2>
+                            <p>Vol. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol2.png" alt="Volume 2" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Útero Amaldiçoado</h2>
+                            <p>Vol. 2</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol3.png" alt="Volume 3" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Peixe Pequeno e Castigo Reverso</h2>
+                            <p>Vol. 3</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol4.png" alt="Volume 4" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Vou te Matar!</h2>
+                            <p>Vol. 4</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol5.png" alt="Volume 5" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Evento de Intercâmbio de Kyoto</h2>
+                            <p>Vol. 5</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol6.png" alt="Volume 6" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Kokusen</h2>
+                            <p>Vol. 6</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol7.png" alt="Volume 7" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>A Origem da Obediência</h2>
+                            <p>Vol. 7</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol8.png" alt="Volume 8" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Inventário Oculto</h2>
+                            <p>Vol. 8</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol9.png" alt="Volume 9" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Morte Prematura</h2>
+                            <p>Vol. 9</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol10.png" alt="Volume 10" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Festival Noturno</h2>
+                            <p>Vol. 10</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol11.png" alt="Volume 11" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>O Incidente de Shibuya: Portão Aberto</h2>
+                            <p>Vol. 11</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol12.png" alt="Volume 12" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>O Incidente de Shibuya: Convocar</h2>
+                            <p>Vol. 12</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol13.png" alt="Volume 13" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>O Incidente de Shibuya: Trovão</h2>
+                            <p>Vol. 13</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol14.png" alt="Volume 14" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>O Incidente de Shibuya: Certo e Errado</h2>
+                            <p>Vol. 14</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol15.png" alt="Volume 15" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>O Incidente de Shibuya: Transformação</h2>
+                            <p>Vol. 15</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="saiba-mais">
+                <div class="saiba-mais-conteudo">
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Para salvar seus amigos de uma maldição, Yuji engole um dedo mumificado de Ryomen Sukuna, o lendário "Rei das Maldições". Surpreendentemente, ele consegue manter o controle do próprio corpo, tornando-se o hospedeiro de Sukuna. Sob a tutela do feiticeiro mais poderoso do mundo, Satoru Gojo, Yuji é matriculado na Escola Técnica de Jujutsu de Tóquio. Sua missão agora é encontrar e consumir todos os outros dedos de Sukuna para então ser executado e destruir a ameaça de uma vez por todas.</p>
+                    </div>
+                    <div class="informacoes">
+                        <h2>Informações</h2>
+                        <div class="informacoes-saiba-mais">
+                            <p>Escrito e Ilustrado por:</p>
+                            <p>Gege Akutami</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração:</p>
+                            <p>Shueisha</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração lusófona:</p>
+                            <p>BR Panini Comics | PT Editora Devir</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Demografia:</p>
+                            <p>Shonen</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Período de publicação:</p>
+                            <p>5 de março de 2018 - 30 de setembro de 2024</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Volumes:</p>
+                            <p>30</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Capítulos:</p>
+                            <p>272</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
     </section>
+
+    <section id="dandadan" class="manga-container">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
+        <div class="banner" style="background-image: url(./banners/banner-dandadan.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Dandadan volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor">
+                        <h1>Dandadan</h1>
+                        <h2>Yukinobu Tatsu</h2>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="../img/icones/icone-estrela.png" alt="Avaliação">
+                        <p>8,4/10</p>
+                        <p class="total-avaliacao">(79.8k)</p>
+                    </div>
+                    <div class="btn-categorias">
+                        <button>Ação</button>
+                        <button>Comédia Romântica</button>
+                        <button>Suspense</button>
+                    </div>
+                    <div class="informacoes-manga">
+                        <div class="info-item">
+                            <p>Status: </p>
+                            <p>em lançamento</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Volumes: </p>
+                            <p>24</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Capítulos: </p>
+                            <p>230</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Publicado por:</p>
+                            <p>Panini Comics</p>
+                        </div>
+                    </div>
+                    <div class="btn-selecao">
+                        <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
+                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+        <section class="container-manga">
+            <input type="radio" name="abas-ddd" id="ddd-volumes" checked>
+            <input type="radio" name="abas-ddd" id="ddd-saiba">
+            <input type="radio" name="abas-ddd" id="ddd-anime">
+            <div class="acoes-manga">
+                <label for="ddd-volumes" class="btn-aba">VOLUMES</label>
+                <label for="ddd-saiba" class="btn-aba">SAIBA MAIS</label>
+                <label for="ddd-anime" class="btn-aba"><a href="../pagina-animes/chainsaw-filme.html">VER O ANIME <img src="../img/icones/icon-redirecionar.png" alt="redirecionar" width="19px"></a></label>
+            </div>
+            <hr color="#1a1622">
+
+            <div class="volumes-selecionar">
+                <div class="volumes">
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Volume 1" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [1]</h2>
+                            <p>Vol. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-2.png" alt="Volume 2" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [2]</h2>
+                            <p>Vol. 2</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-3.png" alt="Volume 3" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [3]</h2>
+                            <p>Vol. 3</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-4.png" alt="Volume 4" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [4]</h2>
+                            <p>Vol. 4</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-5.png" alt="Volume 5" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [5]</h2>
+                            <p>Vol. 5</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-6.png" alt="Volume 6" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [6]</h2>
+                            <p>Vol. 6</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-7.png" alt="Volume 7" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [7]</h2>
+                            <p>Vol. 7</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-8.png" alt="Volume 8" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [8]</h2>
+                            <p>Vol. 8</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-9.png" alt="Volume 9" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [9]</h2>
+                            <p>Vol. 9</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-10.png" alt="Volume 10" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [10]</h2>
+                            <p>Vol. 10</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-11.png" alt="Volume 11" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [11]</h2>
+                            <p>Vol. 11</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-12.png" alt="Volume 12" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [12]</h2>
+                            <p>Vol. 12</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-13.png" alt="Volume 13" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [13]</h2>
+                            <p>Vol. 13</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-14.png" alt="Volume 14" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [14]</h2>
+                            <p>Vol. 14</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-15.png" alt="Volume 15" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [15]</h2>
+                            <p>Vol. 15</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="saiba-mais">
+                <div class="saiba-mais-conteudo">
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Dandadan acompanha Momo Ayase, uma garota que acredita em fantasmas, e seu colega de classe "Okarun", um jovem obcecado por alienígenas. Eles se desafiam para provar a existência de suas crenças, mas acabam descobrindo que tanto espíritos quanto extraterrestres são reais, mergulhando em uma aventura sobrenatural caótica e cheia de ação.</p>
+                    </div>
+                    <div class="informacoes">
+                        <h2>Informações</h2>
+                        <div class="informacoes-saiba-mais">
+                            <p>Escrito e Ilustrado por:</p>
+                            <p>Yukinobu Tatsu</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração:</p>
+                            <p>Shueisha</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração lusófona:</p>
+                            <p>BR Panini Comics</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Selo Editorial:</p>
+                            <p>Jump Comics+</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Demografia:</p>
+                            <p>Shonen</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Período de publicação:</p>
+                            <p>6 de abril de 2021 - presente</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Volumes:</p>
+                            <p>24</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Capítulos:</p>
+                            <p>230</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+    <section id="dandadan" class="manga-container">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
+        <div class="banner" style="background-image: url(./banners/banner-dandadan.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Dandadan volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor">
+                        <h1>Dandadan</h1>
+                        <h2>Yukinobu Tatsu</h2>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="../img/icones/icone-estrela.png" alt="Avaliação">
+                        <p>8,4/10</p>
+                        <p class="total-avaliacao">(79.8k)</p>
+                    </div>
+                    <div class="btn-categorias">
+                        <button>Ação</button>
+                        <button>Comédia Romântica</button>
+                        <button>Suspense</button>
+                    </div>
+                    <div class="informacoes-manga">
+                        <div class="info-item">
+                            <p>Status: </p>
+                            <p>em lançamento</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Volumes: </p>
+                            <p>24</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Capítulos: </p>
+                            <p>230</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Publicado por:</p>
+                            <p>Panini Comics</p>
+                        </div>
+                    </div>
+                    <div class="btn-selecao">
+                        <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
+                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+        <section class="container-manga">
+            <input type="radio" name="abas-ddd" id="ddd-volumes" checked>
+            <input type="radio" name="abas-ddd" id="ddd-saiba">
+            <input type="radio" name="abas-ddd" id="ddd-anime">
+            <div class="acoes-manga">
+                <label for="ddd-volumes" class="btn-aba">VOLUMES</label>
+                <label for="ddd-saiba" class="btn-aba">SAIBA MAIS</label>
+                <label for="ddd-anime" class="btn-aba"><a href="../pagina-animes/chainsaw-filme.html">VER O ANIME <img src="../img/icones/icon-redirecionar.png" alt="redirecionar" width="19px"></a></label>
+            </div>
+            <hr color="#1a1622">
+
+            <div class="volumes-selecionar">
+                <div class="volumes">
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Volume 1" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [1]</h2>
+                            <p>Vol. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-2.png" alt="Volume 2" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [2]</h2>
+                            <p>Vol. 2</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-3.png" alt="Volume 3" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [3]</h2>
+                            <p>Vol. 3</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-4.png" alt="Volume 4" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [4]</h2>
+                            <p>Vol. 4</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-5.png" alt="Volume 5" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [5]</h2>
+                            <p>Vol. 5</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-6.png" alt="Volume 6" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [6]</h2>
+                            <p>Vol. 6</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-7.png" alt="Volume 7" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [7]</h2>
+                            <p>Vol. 7</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-8.png" alt="Volume 8" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [8]</h2>
+                            <p>Vol. 8</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-9.png" alt="Volume 9" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [9]</h2>
+                            <p>Vol. 9</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-10.png" alt="Volume 10" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [10]</h2>
+                            <p>Vol. 10</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-11.png" alt="Volume 11" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [11]</h2>
+                            <p>Vol. 11</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-12.png" alt="Volume 12" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [12]</h2>
+                            <p>Vol. 12</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-13.png" alt="Volume 13" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [13]</h2>
+                            <p>Vol. 13</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-14.png" alt="Volume 14" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [14]</h2>
+                            <p>Vol. 14</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-15.png" alt="Volume 15" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [15]</h2>
+                            <p>Vol. 15</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="saiba-mais">
+                <div class="saiba-mais-conteudo">
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Dandadan acompanha Momo Ayase, uma garota que acredita em fantasmas, e seu colega de classe "Okarun", um jovem obcecado por alienígenas. Eles se desafiam para provar a existência de suas crenças, mas acabam descobrindo que tanto espíritos quanto extraterrestres são reais, mergulhando em uma aventura sobrenatural caótica e cheia de ação.</p>
+                    </div>
+                    <div class="informacoes">
+                        <h2>Informações</h2>
+                        <div class="informacoes-saiba-mais">
+                            <p>Escrito e Ilustrado por:</p>
+                            <p>Yukinobu Tatsu</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração:</p>
+                            <p>Shueisha</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração lusófona:</p>
+                            <p>BR Panini Comics</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Selo Editorial:</p>
+                            <p>Jump Comics+</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Demografia:</p>
+                            <p>Shonen</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Período de publicação:</p>
+                            <p>6 de abril de 2021 - presente</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Volumes:</p>
+                            <p>24</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Capítulos:</p>
+                            <p>230</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+    <section id="dandadan" class="manga-container">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
+        <div class="banner" style="background-image: url(./banners/banner-dandadan.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Dandadan volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor">
+                        <h1>Dandadan</h1>
+                        <h2>Yukinobu Tatsu</h2>
+                    </div>
+                    <div class="avaliacao">
+                        <img src="../img/icones/icone-estrela.png" alt="Avaliação">
+                        <p>8,4/10</p>
+                        <p class="total-avaliacao">(79.8k)</p>
+                    </div>
+                    <div class="btn-categorias">
+                        <button>Ação</button>
+                        <button>Comédia Romântica</button>
+                        <button>Suspense</button>
+                    </div>
+                    <div class="informacoes-manga">
+                        <div class="info-item">
+                            <p>Status: </p>
+                            <p>em lançamento</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Volumes: </p>
+                            <p>24</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Capítulos: </p>
+                            <p>230</p>
+                        </div>
+                        <div class="info-item">
+                            <p>Publicado por:</p>
+                            <p>Panini Comics</p>
+                        </div>
+                    </div>
+                    <div class="btn-selecao">
+                        <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
+                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+        <section class="container-manga">
+            <input type="radio" name="abas-ddd" id="ddd-volumes" checked>
+            <input type="radio" name="abas-ddd" id="ddd-saiba">
+            <input type="radio" name="abas-ddd" id="ddd-anime">
+            <div class="acoes-manga">
+                <label for="ddd-volumes" class="btn-aba">VOLUMES</label>
+                <label for="ddd-saiba" class="btn-aba">SAIBA MAIS</label>
+                <label for="ddd-anime" class="btn-aba"><a href="../pagina-animes/chainsaw-filme.html">VER O ANIME <img src="../img/icones/icon-redirecionar.png" alt="redirecionar" width="19px"></a></label>
+            </div>
+            <hr color="#1a1622">
+
+            <div class="volumes-selecionar">
+                <div class="volumes">
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" alt="Volume 1" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [1]</h2>
+                            <p>Vol. 1</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-2.png" alt="Volume 2" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [2]</h2>
+                            <p>Vol. 2</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-3.png" alt="Volume 3" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [3]</h2>
+                            <p>Vol. 3</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-4.png" alt="Volume 4" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [4]</h2>
+                            <p>Vol. 4</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-5.png" alt="Volume 5" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [5]</h2>
+                            <p>Vol. 5</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-6.png" alt="Volume 6" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [6]</h2>
+                            <p>Vol. 6</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-7.png" alt="Volume 7" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [7]</h2>
+                            <p>Vol. 7</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-8.png" alt="Volume 8" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [8]</h2>
+                            <p>Vol. 8</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-9.png" alt="Volume 9" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [9]</h2>
+                            <p>Vol. 9</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-10.png" alt="Volume 10" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [10]</h2>
+                            <p>Vol. 10</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-11.png" alt="Volume 11" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [11]</h2>
+                            <p>Vol. 11</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-12.png" alt="Volume 12" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [12]</h2>
+                            <p>Vol. 12</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-13.png" alt="Volume 13" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [13]</h2>
+                            <p>Vol. 13</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-14.png" alt="Volume 14" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [14]</h2>
+                            <p>Vol. 14</p>
+                        </div>
+                    </div>
+                    <div class="info-volumes">
+                        <img src="../img/capas/capas-manga/dandadan/dandadan-vol-15.png" alt="Volume 15" class="img-capa">
+                        <div class="titulo-vol">
+                            <h2>Dandadan [15]</h2>
+                            <p>Vol. 15</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="saiba-mais">
+                <div class="saiba-mais-conteudo">
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Dandadan acompanha Momo Ayase, uma garota que acredita em fantasmas, e seu colega de classe "Okarun", um jovem obcecado por alienígenas. Eles se desafiam para provar a existência de suas crenças, mas acabam descobrindo que tanto espíritos quanto extraterrestres são reais, mergulhando em uma aventura sobrenatural caótica e cheia de ação.</p>
+                    </div>
+                    <div class="informacoes">
+                        <h2>Informações</h2>
+                        <div class="informacoes-saiba-mais">
+                            <p>Escrito e Ilustrado por:</p>
+                            <p>Yukinobu Tatsu</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração:</p>
+                            <p>Shueisha</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Editoração lusófona:</p>
+                            <p>BR Panini Comics</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Selo Editorial:</p>
+                            <p>Jump Comics+</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Demografia:</p>
+                            <p>Shonen</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Período de publicação:</p>
+                            <p>6 de abril de 2021 - presente</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Volumes:</p>
+                            <p>24</p>
+                        </div>
+                        <div class="informacoes-saiba-mais">
+                            <p>Capítulos:</p>
+                            <p>230</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+    
+    <!--==========================================-->
+    <!--==========================================-->
+    <footer class="rodape-container">
+        <div class="rodape-conteudo">
+            <div class="rodape-sobre">
+                <h2>Sobre</h2>
+                <a href="#"><p>Sobre nós</p></a>
+                <a href="#"><p>Termos de Privacidade</p></a>
+                <a href="#"><p>Contatos</p></a>
+                <a href="#"><p>Parceiros</p></a>
+            </div>
+            <div class="rodape-ajuda">
+                <h2>Ajuda</h2>
+                <a href="#"><p>Suporte</p></a>
+                <a href="#"><p>FAQ</p></a>
+                <a href="#"><p>Segurança</p></a>
+            </div>
+            <div class="rodape-termos-e-condicoes">
+                <h2>Termos e Condições</h2>
+                <a href="#"><p>Conteúdo</p></a>
+                <a href="#"><p>Métodos de pagamentos</p></a>
+                <a href="#"><p>SaaS</p></a>
+            </div>
+            <div class="rodape-siga-nos">
+                <h2>Siga-nos</h2>
+                <div class="rodape-img-plataformas">
+                    <a href="#"><img src="../img/icones/icone-twitter-alt.png" alt="Twitter Alt"></a>
+                    <a href="#"><img src="../img/icones/icone-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../img/icones/icone-discord.png" alt="Discord"></a>
+                </div>
+            </div>
+        </div>
+        <div class="rodape-logo-bananapoint" id="banana">
+            <img src="../img/BananaPoint.png" alt="Banana Point Logo">
+        </div>
+        <p class="rodape-direitos-reservados"> &copy; 2026 - BananaPoint</p>
+    </footer>
+
+    
+</body>
+</html>

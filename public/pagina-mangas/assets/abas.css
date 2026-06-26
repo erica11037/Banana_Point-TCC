@@ -1,0 +1,116 @@
+input[type="radio"]{
+    display: none;
+}
+
+.volumes-selecionar, .saiba-mais{
+    display: none;
+}
+
+input[id$="volumes"]:checked ~ .volumes-selecionar{
+    display: block;
+}
+
+input[id$="saiba"]:checked ~ .saiba-mais{
+    display: block;
+}
+
+.btn-aba{
+    color: var(--texto-branco);
+}
+
+
+.acoes-manga{
+    padding: 15px;
+    
+}
+
+.btn-aba, .btn-aba a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--texto-branco);
+    font-weight: bold;
+    margin-right: 5px;
+    text-decoration: none;
+    position: relative; 
+    transition: color 0.3s ease;
+}
+.btn-aba a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.btn-aba::after , .btn-aba a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    border-radius: 50px;
+    background-color: var(--cor-ref-primaria40);
+    transform: scaleX(0);
+    transition: transform 0.5s; 
+}
+
+
+
+input[id$="volumes"]:checked ~ .acoes-manga label[for$="volumes"]::after,
+input[id$="saiba"]:checked ~ .acoes-manga label[for$="saiba"]::after {
+    transform: scaleX(1); 
+}
+
+
+input[id$="volumes"]:checked ~ .acoes-manga label[for$="volumes"],
+input[id$="saiba"]:checked ~ .acoes-manga label[for$="saiba"] {
+    
+    color: var(--cor-ref-primaria40); 
+}
+
+
+/*----------------------SAIBA MAIS--------------------*/
+.saiba-mais{
+    display: none;
+    
+}
+.sinopse{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 10px;
+}
+.saiba-mais h2{
+    color: var(--texto-branco);
+}
+
+.saiba-mais p{
+    color: var(--cor-subtitulo-volume);
+}
+.informacoes-saiba-mais{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 10px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.saiba-mais-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.redirecionar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--texto-branco);
+    font-weight: bold;
+}

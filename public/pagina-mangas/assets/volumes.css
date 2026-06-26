@@ -5,10 +5,11 @@
 .info-volumes{
     max-width: 12rem;
 }
-.info-volumes img{
+.img-capa{
     width: 12rem;
     height: 17rem;
     border-radius: 10px;
+    transition: 0.3s;
     
 }
 
@@ -29,4 +30,17 @@
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
+}
+
+.img-capa:hover{
+    transform: scale(105%);
+
+}
+
+.img-capa:hover ~ .titulo-vol{
+    transform: translateY(5%);
+}
+
+.titulo-vol{
+    transition: 0.3s;
 }

@@ -103,25 +103,33 @@
 }
 
 .btn-ler{
+    background-color: var(--cor-ref-primaria40);
+    padding: 10px 25px 10px 25px;
     border: 2px var(--cor-ref-primaria40) solid;
     border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.btn-ler a{
     color: var(--texto-branco);
-    padding: 10px 25px 10px 25px;
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--cor-ref-primaria40);
-    transition: 0.5s;
+    text-decoration: none;
 }
-.btn-selecao-volume{
+.btn-lista{
     background-color: transparent;
     border: 2px var(--cor-ref-primaria70) solid;
     border-radius: 5px;
-    color: var(--texto-branco);
+    color: var(--cor-ref-primaria70);
     padding: 10px 25px 10px 25px;
     font-size: 15px;
     font-weight: bold;
-    
+    display: flex;
+    gap: 10px;
     transition: 0.5s;
+    align-items: center;
+    justify-content: center;
 
 }
 .btn-ler:hover{
@@ -129,5 +137,11 @@
     transform: scale(110%);
     background-color: var(--cor-ref-primaria60);
 
+}
+
+.btn-lista:hover{
+    color: var(--cor-ref-primaria80);
+    border: 2px var(--cor-ref-primaria80) solid;
+    transform: scale(110%);
 }
 

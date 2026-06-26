@@ -1,0 +1,30 @@
+.recomendacoes h2{
+    color: var(--texto-branco);
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+}
+
+.anime-recomendacao img{
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.anime-recomendacao h3{
+    color: var(--texto-branco);
+}
+
+.anime-recomendacao p{
+    color: #7b688d;
+}
+
+.recomendacoes-conteudo{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.anime-recomendacao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

@@ -5,3 +5,23 @@
 .manga-container:target{
     display: block !important;
 }
+
+.voltar-btn a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(300%);
+    padding-left: 10px;
+    
+}
+.voltar-btn img{
+    transition: 0.2s;
+}
+
+.voltar-btn img:hover{
+    background-color: var(--cor-ref-primaria20);
+    padding: 2px;
+    border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+.trailer video{
+  
+  width: 526px;
+  height: 300px;
+  border: 4px solid var(--cor-ref-primaria50);
+  border-radius: 15px;   
+  overflow: hidden; 
+}
+
+.trailer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.trailer-infos{
+    display: flex;
+}
+
+.metadados-anime{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 1.5rem;
+}
+
+.infos h3{
+    color: var(--cor-ref-primaria50);
+}
+
+.infos p{
+    color: var(--cor-ref-primaria80);
+}
+
+.titulo-trailer{
+    color: var(--texto-branco);
+    padding-bottom: 1.5rem;
+}
+
