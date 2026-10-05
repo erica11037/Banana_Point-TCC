@@ -1,0 +1,315 @@
+.pagina-minha-lista{
+    min-height: 100vh;
+    padding: 7.5rem clamp(1rem, 3vw, 3rem) 4rem;
+}
+
+.visualmente-oculto{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.cabecalho-lista{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.icone-titulo-lista{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.cabecalho-lista h1{
+    color: var(--texto-branco);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.cabecalho-lista p,
+.contagem-favoritos{
+    color: var(--cor-texto-info);
+}
+
+.controles-lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--cor-ref-primaria20);
+}
+
+.filtros-lista,
+.busca-ordenacao{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.filtro-lista,
+.busca-ordenacao input,
+.busca-ordenacao select{
+    min-height: 2.5rem;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--cor-ref-primaria20);
+    border-radius: 0.6rem;
+    background: var(--cor-ref-primaria5);
+    color: var(--texto-branco);
+}
+
+.filtro-lista{
+    cursor: pointer;
+}
+
+.filtro-lista:hover,
+.filtro-lista:focus-visible,
+.filtro-lista.ativo{
+    border-color: var(--cor-ref-primaria50);
+    background: var(--cor-ref-primaria10);
+    color: var(--cor-ref-primaria80);
+}
+
+.busca-ordenacao input{
+    width: min(19rem, 70vw);
+}
+
+.filtro-lista:focus-visible,
+.busca-ordenacao input:focus-visible,
+.busca-ordenacao select:focus-visible,
+.favorito-card a:focus-visible,
+.favorito-card button:focus-visible,
+.botao-vazio:focus-visible{
+    outline: 3px solid var(--cor-ref-primaria60);
+    outline-offset: 2px;
+}
+
+.contagem-favoritos{
+    margin: 1rem 0;
+}
+
+.grade-favoritos{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.favorito-card{
+    display: grid;
+    grid-template-columns: minmax(6rem, 9rem) minmax(0, 1fr);
+    gap: 1rem;
+    min-width: 0;
+    padding: 0.8rem;
+    border: 1px solid var(--cor-ref-primaria20);
+    border-radius: 0.9rem;
+    background: linear-gradient(135deg, #12101a, #0c0b12);
+    box-shadow: 0 0.6rem 1.7rem #0005;
+}
+
+.favorito-card:hover{
+    border-color: var(--cor-ref-primaria50);
+    box-shadow: 0 0 1.1rem #633dd433;
+}
+
+.favorito-capa{
+    width: 100%;
+    height: 13rem;
+    border-radius: 0.65rem;
+    object-fit: cover;
+}
+
+.favorito-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    gap: 0.55rem;
+}
+
+.favorito-tipo{
+    padding: 0.2rem 0.65rem;
+    border-radius: 2rem;
+    background: var(--fundo-card);
+    color: var(--cor-ref-primaria70);
+    font-size: 0.78rem;
+}
+
+.favorito-conteudo h2{
+    color: var(--texto-branco);
+    font-size: 1.1rem;
+}
+
+.favorito-generos,
+.favorito-descricao{
+    color: var(--cor-texto-info);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.favorito-acoes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: auto;
+}
+
+.favorito-abrir,
+.favorito-remover,
+.botao-vazio{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid var(--cor-ref-primaria30);
+    border-radius: 0.6rem;
+    color: var(--texto-branco);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.favorito-abrir,
+.botao-vazio{
+    background: var(--cor-ref-primaria40);
+}
+
+.favorito-remover{
+    background: transparent;
+}
+
+.favorito-abrir:hover,
+.botao-vazio:hover{
+    background: var(--cor-ref-primaria50);
+}
+
+.favorito-remover:hover{
+    border-color: var(--cor-ref-primaria60);
+    background: var(--cor-ref-primaria10);
+}
+
+.estado-vazio-lista{
+    display: grid;
+    place-items: center;
+    min-height: 50vh;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.estado-vazio-conteudo{
+    max-width: 38rem;
+}
+
+.marcador-vazio{
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.2rem;
+    border-radius: 1.2rem;
+    background: var(--cor-ref-primaria10);
+    color: var(--cor-ref-primaria60);
+    font-size: 2rem;
+}
+
+.estado-vazio-lista h2{
+    margin-bottom: 0.7rem;
+    color: var(--texto-branco);
+    font-size: 1.55rem;
+}
+
+.estado-vazio-lista p{
+    margin-bottom: 0.6rem;
+    color: var(--cor-texto-info);
+    line-height: 1.6;
+}
+
+.botao-vazio{
+    margin-top: 1.2rem;
+}
+
+[hidden]{
+    display: none !important;
+}
+
+@media (max-width: 1050px){
+    .grade-favoritos{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px){
+    .cabecalho-container{
+        flex-wrap: wrap;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .cabecalho-container > a .logo-img{
+        width: 7rem;
+        padding: 0.35rem;
+    }
+
+    .cabecalho-container nav{
+        order: 3;
+        width: 100%;
+    }
+
+    .cabecalho-container .navegacao{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 1rem;
+        padding-bottom: 0.35rem;
+    }
+
+    .cabecalho-container .link-navegacao{
+        font-size: 0.85rem;
+    }
+
+    .cabecalho-container .usuario-acoes{
+        gap: 0.8rem;
+        margin-left: auto;
+        padding-right: 0.25rem;
+    }
+
+    .cabecalho-container .usuario-acoes img{
+        width: 1.8rem;
+    }
+
+    .pagina-minha-lista{
+        padding-top: 6rem;
+    }
+
+    .controles-lista,
+    .busca-ordenacao{
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .busca-ordenacao input,
+    .busca-ordenacao select{
+        width: 100%;
+    }
+
+    .grade-favoritos{
+        grid-template-columns: 1fr;
+    }
+
+    .favorito-card{
+        grid-template-columns: minmax(5.5rem, 7rem) minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+
+    .favorito-capa{
+        height: 10rem;
+    }
+}

@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="./assets/trailer.css">
     <link rel="stylesheet" href="./assets/temporadas.css">
     <link rel="stylesheet" href="./assets/recomendacoes.css">
-    <script src="./assets/script.js" defer></script>
     
     <link rel="stylesheet" href="../pagina-mangas/assets/abas.css">
-    <script src="../assets/script.js" defer></script>
+    <script src="../assets/favoritos.js" defer></script>
     <title>Banana Point | Categorias </title>
     <link rel="shortcut icon" href="../img/banana-_1_.ico" type="image/x-icon">
 </head>
@@ -34,13 +33,13 @@
                 <li class="lista-navegacao"><a class="link-navegacao" href="../mangas">Mangás</a></li>
             </ul>
         <div class="usuario-acoes">
-            <a href="#"><img src="../img/icones/icone-favoritos.png" alt="Favoritos"></a>
-            <a href="#"><img src="../img/icones/icone-perfil.png" alt="Perfil"></a>
+            <a href="../favoritos.html" aria-label="Minha Lista"><img src="../img/icones/icone-favoritos.png" alt="Favoritos"></a>
+            <a href="../login.html"><img src="../img/icones/icone-perfil.png" alt="Entrar na conta"></a>
         </div>
     </div>
 
     <!--==================JUJUTSU KAISEN========================-->
-    <section id="jujutsu-kaisen" class="anime-container">
+    <section id="jujutsu-kaisen" class="anime-container" data-favorito-id="jujutsu-kaisen-anime" data-favorito-tipo="anime" data-favorito-titulo="Jujutsu Kaisen" data-favorito-capa="../img/capas/capas-animes/jujutsu-kaisen.png" data-favorito-descricao="Em Jujutsu Kaisen, sentimentos humanos negativos dão origem a Maldições. Yuji Itadori engole o dedo de Sukuna para salvar seus amigos e passa a buscar os dedos restantes." data-favorito-generos="Ação · Fantasia sombria" data-favorito-detalhes="../pagina-animes/index.html#jujutsu-kaisen">
         <div class="voltar-btn"><a href="../index.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner" style="background-image: url(./banners/banner-jujutsu-kaisen.webp);">
             <div class="banner-info">
@@ -60,7 +59,7 @@
                 </div>
                 <div class="btn-acoes">
                     <a href="#" class="btn-assistir"><img src="../img/icones/icone-play.png" alt="Adicionar">ASSISTIR</a>
-                    <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar">MINHA LISTA</button>
+                    <button type="button" class="btn-lista" data-favorito-botao><img src="../img/icones/icone-lista.png" alt="">MINHA LISTA</button>
                 </div>
             </div>
         </div>
@@ -79,9 +78,7 @@
                     </div>
                     <div class="trailer-infos">
                         <div class="trailer">
-                            <video preload="metadata" poster="./poster/trailer-jjk.png" onclick="ativarTrailer(this)">
-                                <source src="./trailers/Jujutsu Kaisen - Trailer.mp4" type="video/mp4">
-                            </video>
+                            <iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Jujutsu Kaisen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="metadados-anime">
                             <div class="infos">
@@ -228,7 +225,7 @@
     </section>
 
     <!--==================chainsaw man========================-->
-    <section id="chainsaw-man" class="anime-container">
+    <section id="chainsaw-man" class="anime-container" data-favorito-id="chainsaw-man-anime" data-favorito-tipo="anime" data-favorito-titulo="Chainsaw Man" data-favorito-capa="../img/capas/capas-animes/chainsaw-man.png" data-favorito-descricao="Denji, um jovem endividado que caça demônios ao lado de Pochita, ganha poderes de demônio-serra e passa a trabalhar para uma organização de caçadores." data-favorito-generos="Ação · Fantasia sombria" data-favorito-detalhes="../pagina-animes/index.html#chainsaw-man">
         <div class="voltar-btn"><a href="../index.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner" style="background-image: url(./banners/chainsaw-man.webp);">
             <div class="banner-info">
@@ -248,7 +245,7 @@
                 </div>
                 <div class="btn-acoes">
                     <a href="#" class="btn-assistir"><img src="../img/icones/icone-play.png" alt="Adicionar">ASSISTIR</a>
-                    <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar">MINHA LISTA</button>
+                    <button type="button" class="btn-lista" data-favorito-botao><img src="../img/icones/icone-lista.png" alt="">MINHA LISTA</button>
                 </div>
             </div>
         </div>
@@ -267,7 +264,7 @@
                     </div>
                     <div class="trailer-infos">
                         <div class="trailer">
-                            <video preload="metadata" poster="./poster/trailer-csm.png" onclick="ativarTrailer(this)">
+                            <video controls preload="metadata" poster="./poster/trailer-csm.png">
                                 <source src="./trailers/Chainsaw Man - Trailer.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -416,7 +413,7 @@
     </section>
 
     <!--==================dandadan========================-->
-    <section id="dandadan" class="anime-container">
+    <section id="dandadan" class="anime-container" data-favorito-id="dandadan-anime" data-favorito-tipo="anime" data-favorito-titulo="Dandadan" data-favorito-capa="../img/capas/capas-animes/dandadan.png" data-favorito-descricao="Momo e Okarun se envolvem em encontros com fenômenos sobrenaturais e alienígenas, descobrindo poderes e enfrentando ameaças." data-favorito-generos="Ação · Comédia · Sobrenatural" data-favorito-detalhes="../pagina-animes/index.html#dandadan">
         <div class="voltar-btn"><a href="../index.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner" style="background-image: url(./banners/dandadan.webp);">
             <div class="banner-info">
@@ -436,7 +433,7 @@
                 </div>
                 <div class="btn-acoes">
                     <a href="#" class="btn-assistir"><img src="../img/icones/icone-play.png" alt="Adicionar">ASSISTIR</a>
-                    <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar">MINHA LISTA</button>
+                    <button type="button" class="btn-lista" data-favorito-botao><img src="../img/icones/icone-lista.png" alt="">MINHA LISTA</button>
                 </div>
             </div>
         </div>
@@ -455,7 +452,7 @@
                     </div>
                     <div class="trailer-infos">
                         <div class="trailer">
-                            <video preload="metadata" poster="./poster/trailer-csm.png" onclick="ativarTrailer(this)">
+                            <video controls preload="metadata" poster="./poster/trailer-csm.png">
                                 <source src="./trailers/Chainsaw Man - Trailer.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -599,6 +596,616 @@
                         </div>
                     </div>
                 </div>
+            </main>
+        </section>
+    </section>
+
+    <section id="demon-slayer" class="anime-container" data-favorito-id="demon-slayer-anime" data-favorito-tipo="anime" data-favorito-titulo="Demon Slayer: Kimetsu no Yaiba" data-favorito-capa="../img/capas/capas-animes/demon-slayer.png" data-favorito-descricao="Depois que sua família é atacada por demônios, Tanjiro Kamado se torna um caçador e busca uma cura para sua irmã Nezuko." data-favorito-generos="Ação · Fantasia · Sobrenatural" data-favorito-detalhes="../pagina-animes/index.html#demon-slayer">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/demon-slayer.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Demon Slayer: Kimetsu no Yaiba</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-16.png" alt="Indicação etária: 16 anos" width="23">
+                        <p>2019 • 4 temporadas de TV</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Série dublada em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Depois que sua família é atacada por demônios, Tanjiro Kamado se torna um caçador e busca uma cura para sua irmã Nezuko, que sobreviveu transformada em demônio.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#demon-slayer" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#demon-slayer" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#demon-slayer">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#demon-slayer">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Demon Slayer</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer">
+                            <iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Demon Slayer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>ufotable</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Ação, fantasia sombria e sobrenatural</p></div>
+                            <div class="infos"><h3>Status</h3><p>Quatro arcos de TV concluídos; a continuação segue em filmes.</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container">
+                    <h2>Temporadas</h2>
+                    <div class="temporadas-conteudos">
+                        <button>Temporada 1</button>
+                        <div class="episodios-container">
+                            <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Demon Slayer"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Demon Slayer"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Demon Slayer"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Demon Slayer"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Demon Slayer"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Demon Slayer"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Demon Slayer"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Demon Slayer"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Demon Slayer"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Demon Slayer"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Demon Slayer"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Demon Slayer"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                        </div>
+                    </div>
+                </div>
+                <hr color="#1a1622">
+                <div class="recomendacoes">
+                    <h2>Recomendações para você</h2>
+                    <div class="recomendacoes-conteudo">
+                        <a class="anime-recomendacao" href="#gachiakuta"><img src="../img/capas/capas-animes/gachiakuta.png" alt="Gachiakuta"><h3>Gachiakuta</h3><p>2025</p></a>
+                        <a class="anime-recomendacao" href="#frieren-e-a-jornada"><img src="../img/capas/capas-animes/frieren-e-a-jornada-para-o-alem.png" alt="Frieren e a Jornada para o Além"><h3>Frieren e a Jornada para o Além</h3><p>2023</p></a>
+                        <a class="anime-recomendacao" href="#jujutsu-kaisen"><img src="../img/capas/capas-animes/jujutsu-kaisen.png" alt="Jujutsu Kaisen"><h3>Jujutsu Kaisen</h3><p>2020</p></a>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </section>
+
+    <section id="diarios-de-uma-apotecaria" class="anime-container" data-favorito-id="diarios-de-uma-apotecaria-anime" data-favorito-tipo="anime" data-favorito-titulo="Diários de uma Apotecária" data-favorito-capa="../img/capas/capas-animes/diarios-de-uma-apotecaria.png" data-favorito-descricao="Maomao, uma jovem conhecedora de ervas e venenos, passa a trabalhar no palácio imperial e ajuda a solucionar mistérios da corte." data-favorito-generos="Mistério · Drama · Histórico" data-favorito-detalhes="../pagina-animes/index.html#diarios-de-uma-apotecaria">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/diarios-de-uma-apotecaria.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Diários de uma Apotecária</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-14.png" alt="Indicação etária: 14 anos" width="23">
+                        <p>2023 • 3ª temporada em andamento</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Temporadas 1 e 2 dubladas em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Levadas ao palácio imperial, Maomao usa seus conhecimentos de medicina e venenos para resolver mistérios e intrigas da corte.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#diarios-de-uma-apotecaria" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#diarios-de-uma-apotecaria" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#diarios-de-uma-apotecaria">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#diarios-de-uma-apotecaria">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Diários de uma Apotecária</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Diários de uma Apotecária" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>OLM</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Mistério, drama e histórico</p></div>
+                            <div class="infos"><h3>Status</h3><p>Temporada 3 em andamento</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Temporadas 1 e 2 dubladas; temporada 3 pode variar</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container">
+                    <h2>Temporadas</h2>
+                    <div class="temporadas-conteudos">
+                        <button>Temporada 1</button>
+                        <div class="episodios-container">
+                            <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Diários de uma Apotecária"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Diários de uma Apotecária"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Diários de uma Apotecária"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Diários de uma Apotecária"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Diários de uma Apotecária"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Diários de uma Apotecária"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Diários de uma Apotecária"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Diários de uma Apotecária"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Diários de uma Apotecária"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Diários de uma Apotecária"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Diários de uma Apotecária"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                            <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Diários de uma Apotecária"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                        </div>
+                    </div>
+                </div>
+                <hr color="#1a1622">
+                <div class="recomendacoes">
+                    <h2>Recomendações para você</h2>
+                    <div class="recomendacoes-conteudo">
+                        <a class="anime-recomendacao" href="#frieren-e-a-jornada"><img src="../img/capas/capas-animes/frieren-e-a-jornada-para-o-alem.png" alt="Frieren e a Jornada para o Além"><h3>Frieren e a Jornada para o Além</h3><p>2023</p></a>
+                        <a class="anime-recomendacao" href="#dorohedoro"><img src="../img/capas/capas-animes/dorohedoro.png" alt="Dorohedoro"><h3>Dorohedoro</h3><p>2020</p></a>
+                        <a class="anime-recomendacao" href="#jujutsu-kaisen"><img src="../img/capas/capas-animes/jujutsu-kaisen.png" alt="Jujutsu Kaisen"><h3>Jujutsu Kaisen</h3><p>2020</p></a>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </section>
+
+    <section id="gachiakuta" class="anime-container" data-favorito-id="gachiakuta-anime" data-favorito-tipo="anime" data-favorito-titulo="Gachiakuta" data-favorito-capa="../img/capas/capas-animes/gachiakuta.png" data-favorito-descricao="Após ser acusado injustamente e lançado no Abismo, Rudo descobre poderes ligados aos objetos descartados e busca sobreviver." data-favorito-generos="Ação · Fantasia · Aventura" data-favorito-detalhes="../pagina-animes/index.html#gachiakuta">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/gachiakuta.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Gachiakuta</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-16.png" alt="Indicação etária: 16 anos" width="23">
+                        <p>2025 • 1 temporada (2 cours)</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Temporada 1 dublada em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Acusado injustamente e lançado no Abismo, Rudo precisa sobreviver entre criaturas perigosas e se junta aos Zeladores para lutar e descobrir a verdade.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#gachiakuta" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#gachiakuta" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#gachiakuta">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#gachiakuta">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Gachiakuta</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Gachiakuta" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>Bones Film</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Ação, fantasia e aventura</p></div>
+                            <div class="infos"><h3>Status</h3><p>Temporada 1 em dois cours; temporada 2 anunciada</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Gachiakuta"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Gachiakuta"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Gachiakuta"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Gachiakuta"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Gachiakuta"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Gachiakuta"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Gachiakuta"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Gachiakuta"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Gachiakuta"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Gachiakuta"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Gachiakuta"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Gachiakuta"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#demon-slayer"><img src="../img/capas/capas-animes/demon-slayer.png" alt="Demon Slayer"><h3>Demon Slayer</h3><p>2019</p></a>
+                    <a class="anime-recomendacao" href="#dorohedoro"><img src="../img/capas/capas-animes/dorohedoro.png" alt="Dorohedoro"><h3>Dorohedoro</h3><p>2020</p></a>
+                    <a class="anime-recomendacao" href="#jujutsu-kaisen"><img src="../img/capas/capas-animes/jujutsu-kaisen.png" alt="Jujutsu Kaisen"><h3>Jujutsu Kaisen</h3><p>2020</p></a>
+                </div></div>
+            </main>
+        </section>
+    </section>
+
+    <section id="dorohedoro" class="anime-container" data-favorito-id="dorohedoro-anime" data-favorito-tipo="anime" data-favorito-titulo="Dorohedoro" data-favorito-capa="../img/capas/capas-animes/dorohedoro.png" data-favorito-descricao="Caiman e Nikaido percorrem a cidade de Hole em busca do feiticeiro que transformou a cabeça de Caiman e apagou suas lembranças." data-favorito-generos="Ação · Fantasia sombria · Comédia" data-favorito-detalhes="../pagina-animes/index.html#dorohedoro">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/dorohedoro.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Dorohedoro</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-18.png" alt="Indicação etária: 18 anos" width="23">
+                        <p>2020 • 2 temporadas lançadas; 3ª anunciada</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Dublagem brasileira disponível</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Em Hole, Caiman e sua amiga Nikaido procuram o feiticeiro responsável por transformar sua cabeça em uma cabeça de lagarto e apagar suas memórias.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#dorohedoro" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#dorohedoro" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#dorohedoro">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#dorohedoro">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Dorohedoro</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Dorohedoro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>MAPPA</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Ação, fantasia sombria e comédia de terror</p></div>
+                            <div class="infos"><h3>Status</h3><p>Duas temporadas lançadas; terceira temporada anunciada</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Dorohedoro"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Dorohedoro"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Dorohedoro"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Dorohedoro"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Dorohedoro"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Dorohedoro"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Dorohedoro"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Dorohedoro"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Dorohedoro"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Dorohedoro"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Dorohedoro"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Dorohedoro"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#gachiakuta"><img src="../img/capas/capas-animes/gachiakuta.png" alt="Gachiakuta"><h3>Gachiakuta</h3><p>2025</p></a>
+                    <a class="anime-recomendacao" href="#demon-slayer"><img src="../img/capas/capas-animes/demon-slayer.png" alt="Demon Slayer"><h3>Demon Slayer</h3><p>2019</p></a>
+                    <a class="anime-recomendacao" href="#jujutsu-kaisen"><img src="../img/capas/capas-animes/jujutsu-kaisen.png" alt="Jujutsu Kaisen"><h3>Jujutsu Kaisen</h3><p>2020</p></a>
+                </div></div>
+            </main>
+        </section>
+    </section>
+
+    <section id="frieren-e-a-jornada" class="anime-container" data-favorito-id="frieren-e-a-jornada-anime" data-favorito-tipo="anime" data-favorito-titulo="Frieren e a Jornada para o Além" data-favorito-capa="../img/capas/capas-animes/frieren-e-a-jornada-para-o-alem.png" data-favorito-descricao="Após a vitória sobre o Rei Demônio, a maga Frieren inicia uma nova jornada para compreender melhor os vínculos que criou com seus antigos companheiros." data-favorito-generos="Aventura · Fantasia · Drama" data-favorito-detalhes="../pagina-animes/index.html#frieren-e-a-jornada">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/frieren-e-a-jornada-para-o-alem.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Frieren e a Jornada para o Além</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-14.png" alt="Indicação etária: 14 anos" width="23">
+                        <p>2023 • 2 temporadas</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Série clássica dublada em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Após derrotar o Rei Demônio, a maga elfa Frieren parte em uma nova jornada e tenta compreender melhor os laços que criou com seus companheiros humanos.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#frieren-e-a-jornada" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#frieren-e-a-jornada" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#frieren-e-a-jornada">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#frieren-e-a-jornada">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Frieren e a Jornada para o Além</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Frieren e a Jornada para o Além" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>Madhouse</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Aventura, fantasia e drama</p></div>
+                            <div class="infos"><h3>Temporadas</h3><p>38 episódios: 28 na primeira temporada e 10 na segunda</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Frieren"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Frieren"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Frieren"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Frieren"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Frieren"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Frieren"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Frieren"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Frieren"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Frieren"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Frieren"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Frieren"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Frieren"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#diarios-de-uma-apotecaria"><img src="../img/capas/capas-animes/diarios-de-uma-apotecaria.png" alt="Diários de uma Apotecária"><h3>Diários de uma Apotecária</h3><p>2023</p></a>
+                    <a class="anime-recomendacao" href="#demon-slayer"><img src="../img/capas/capas-animes/demon-slayer.png" alt="Demon Slayer"><h3>Demon Slayer</h3><p>2019</p></a>
+                    <a class="anime-recomendacao" href="#jujutsu-kaisen"><img src="../img/capas/capas-animes/jujutsu-kaisen.png" alt="Jujutsu Kaisen"><h3>Jujutsu Kaisen</h3><p>2020</p></a>
+                </div></div>
+            </main>
+        </section>
+    </section>
+
+    <section id="dragon-ball" class="anime-container" data-favorito-id="dragon-ball-anime" data-favorito-tipo="anime" data-favorito-titulo="Dragon Ball (série original)" data-favorito-capa="../img/capas/capas-animes/dragon-ball.png" data-favorito-descricao="Goku acompanha Bulma em uma jornada para reunir as Esferas do Dragão, enfrentando adversários e participando de torneios de artes marciais." data-favorito-generos="Aventura · Artes marciais · Fantasia" data-favorito-detalhes="../pagina-animes/index.html#dragon-ball">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/dragon-ball.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Dragon Ball (série original)</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-livre.png" alt="Indicação etária livre" width="23">
+                        <p>1986 • Série original concluída</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Série original dublada em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>O jovem Goku e Bulma partem em busca das Esferas do Dragão, encontrando aliados, rivais e torneios de artes marciais pelo caminho.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#dragon-ball" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#dragon-ball" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#dragon-ball">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#dragon-ball">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Dragon Ball</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Dragon Ball" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>Toei Animation</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Aventura, ação e comédia</p></div>
+                            <div class="infos"><h3>Episódios</h3><p>153 episódios na série original; Dragon Ball Z é uma série separada</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Dragon Ball"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Dragon Ball"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Dragon Ball"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Dragon Ball"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Dragon Ball"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Dragon Ball"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Dragon Ball"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Dragon Ball"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Dragon Ball"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Dragon Ball"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Dragon Ball"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Dragon Ball"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#naruto"><img src="../img/capas/capas-animes/naruto.png" alt="Naruto"><h3>Naruto</h3><p>2002</p></a>
+                    <a class="anime-recomendacao" href="#one-piece"><img src="../img/capas/capas-animes/one-piece.png" alt="One Piece"><h3>One Piece</h3><p>1999</p></a>
+                    <a class="anime-recomendacao" href="#yu-yu-hakusho"><img src="../img/capas/capas-animes/yu-yu-hakusho.png" alt="Yu Yu Hakusho"><h3>Yu Yu Hakusho</h3><p>1992</p></a>
+                </div></div>
+            </main>
+        </section>
+    </section>
+
+    <section id="naruto" class="anime-container" data-favorito-id="naruto-anime" data-favorito-tipo="anime" data-favorito-titulo="Naruto (série original)" data-favorito-capa="../img/capas/capas-animes/naruto.png" data-favorito-descricao="Naruto cresce rejeitado por sua vila e determinado a se tornar Hokage, enquanto treina para ser um ninja e protege seus amigos." data-favorito-generos="Ação · Aventura · Artes marciais" data-favorito-detalhes="../pagina-animes/index.html#naruto">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/naruto.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Naruto (série original)</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-14.png" alt="Indicação etária: 14 anos" width="23">
+                        <p>2002 • Série original concluída</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Dublagem brasileira disponível; cobertura parcial</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Naruto Uzumaki sonha em se tornar Hokage e conquistar o reconhecimento de sua vila, enquanto enfrenta missões e aprende a trabalhar com seus companheiros ninjas.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#naruto" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#naruto" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#naruto">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#naruto">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Naruto</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Naruto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>Pierrot</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Ação, aventura e fantasia</p></div>
+                            <div class="infos"><h3>Episódios</h3><p>220 episódios; Naruto: Shippuden é uma série separada</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Naruto"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Naruto"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Naruto"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Naruto"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Naruto"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Naruto"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Naruto"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Naruto"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Naruto"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Naruto"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Naruto"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Naruto"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#dragon-ball"><img src="../img/capas/capas-animes/dragon-ball.png" alt="Dragon Ball"><h3>Dragon Ball</h3><p>1986</p></a>
+                    <a class="anime-recomendacao" href="#one-piece"><img src="../img/capas/capas-animes/one-piece.png" alt="One Piece"><h3>One Piece</h3><p>1999</p></a>
+                    <a class="anime-recomendacao" href="#yu-yu-hakusho"><img src="../img/capas/capas-animes/yu-yu-hakusho.png" alt="Yu Yu Hakusho"><h3>Yu Yu Hakusho</h3><p>1992</p></a>
+                </div></div>
+            </main>
+        </section>
+    </section>
+
+    <section id="one-piece" class="anime-container" data-favorito-id="one-piece-anime" data-favorito-tipo="anime" data-favorito-titulo="One Piece" data-favorito-capa="../img/capas/capas-animes/one-piece.png" data-favorito-descricao="Luffy reúne uma tripulação e navega pelos mares em busca do One Piece, o tesouro que pode torná-lo o Rei dos Piratas." data-favorito-generos="Aventura · Ação · Fantasia" data-favorito-detalhes="../pagina-animes/index.html#one-piece">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/one-piece.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">One Piece</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-14.png" alt="Indicação etária: 14 anos" width="23">
+                        <p>1999 • Em andamento</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Série clássica dublada em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Monkey D. Luffy reúne uma tripulação e parte para encontrar o tesouro One Piece e realizar seu sonho de se tornar o Rei dos Piratas.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#one-piece" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#one-piece" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#one-piece">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#one-piece">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: One Piece</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de One Piece" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>Toei Animation</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Aventura, ação e fantasia</p></div>
+                            <div class="infos"><h3>Status</h3><p>Em andamento; divisão em temporadas varia por plataforma</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado; a cobertura varia</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de One Piece"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de One Piece"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de One Piece"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de One Piece"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de One Piece"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de One Piece"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de One Piece"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de One Piece"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de One Piece"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de One Piece"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de One Piece"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de One Piece"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#dragon-ball"><img src="../img/capas/capas-animes/dragon-ball.png" alt="Dragon Ball"><h3>Dragon Ball</h3><p>1986</p></a>
+                    <a class="anime-recomendacao" href="#naruto"><img src="../img/capas/capas-animes/naruto.png" alt="Naruto"><h3>Naruto</h3><p>2002</p></a>
+                    <a class="anime-recomendacao" href="#yu-yu-hakusho"><img src="../img/capas/capas-animes/yu-yu-hakusho.png" alt="Yu Yu Hakusho"><h3>Yu Yu Hakusho</h3><p>1992</p></a>
+                </div></div>
+            </main>
+        </section>
+    </section>
+
+    <section id="yu-yu-hakusho" class="anime-container" data-favorito-id="yu-yu-hakusho-anime" data-favorito-tipo="anime" data-favorito-titulo="Yu Yu Hakusho" data-favorito-capa="../img/capas/capas-animes/yu-yu-hakusho.png" data-favorito-descricao="Após morrer ao salvar uma criança, Yusuke recebe a oportunidade de voltar à vida como detetive espiritual e enfrentar ameaças sobrenaturais." data-favorito-generos="Ação · Aventura · Sobrenatural" data-favorito-detalhes="../pagina-animes/index.html#yu-yu-hakusho">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-animes/yu-yu-hakusho.png);">
+            <div class="banner-info">
+                <h1 class="titulo-obra">Yu Yu Hakusho</h1>
+                <div class="metadados-banner">
+                    <div class="informacoes-obra">
+                        <img src="../img/classificacao/classificacao-14.png" alt="Indicação etária: 14 anos" width="23">
+                        <p>1992 • 4 temporadas</p>
+                    </div>
+                    <div class="opcao-exibicao"><p>Dublado em português brasileiro</p></div>
+                </div>
+                <div class="descricao-banner">
+                    <p>Depois de morrer ao salvar uma criança, Yusuke Urameshi retorna como Detetive Espiritual e passa a investigar casos sobrenaturais.</p>
+                </div>
+                <div class="btn-acoes">
+                    <a href="#yu-yu-hakusho" class="btn-assistir">SAIBA MAIS</a>
+                    <a href="../pagina-mangas/index.html#yu-yu-hakusho" class="btn-lista">VER O MANGÁ</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-assista">
+            <div class="acoes-manga">
+                <a class="btn-aba" href="#yu-yu-hakusho">INFORMAÇÕES</a>
+                <a class="btn-aba" href="../pagina-mangas/index.html#yu-yu-hakusho">LER O MANGÁ</a>
+            </div>
+            <hr color="#1a1622">
+            <main class="conteudo-central">
+                <div class="trailer-container">
+                    <div class="titulo-trailer"><h2>Trailer - Temporada 1: Yu Yu Hakusho</h2></div>
+                    <div class="trailer-infos">
+                        <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/ynr6gnyu9NE?rel=0" title="Trailer de Yu Yu Hakusho" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="metadados-anime">
+                            <div class="infos"><h3>Estúdio</h3><p>Pierrot</p></div>
+                            <div class="infos"><h3>Gêneros</h3><p>Ação, aventura e sobrenatural</p></div>
+                            <div class="infos"><h3>Status</h3><p>112 episódios; história concluída em 1995</p></div>
+                            <div class="infos"><h3>Disponível em</h3><p>Dublado e legendado</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="temporadas-container"><h2>Temporadas</h2><div class="temporadas-conteudos">
+                    <button>Temporada 1</button><div class="episodios-container">
+                        <div class="episodio"><img src="./episodios/episodio 1.webp" alt="Imagem provisória do episódio 1 de Yu Yu Hakusho"><h4>Episódio 1</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-2.webp" alt="Imagem provisória do episódio 2 de Yu Yu Hakusho"><h4>Episódio 2</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-3.webp" alt="Imagem provisória do episódio 3 de Yu Yu Hakusho"><h4>Episódio 3</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-4.webp" alt="Imagem provisória do episódio 4 de Yu Yu Hakusho"><h4>Episódio 4</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-5.webp" alt="Imagem provisória do episódio 5 de Yu Yu Hakusho"><h4>Episódio 5</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-6.webp" alt="Imagem provisória do episódio 6 de Yu Yu Hakusho"><h4>Episódio 6</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-7.webp" alt="Imagem provisória do episódio 7 de Yu Yu Hakusho"><h4>Episódio 7</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-8.webp" alt="Imagem provisória do episódio 8 de Yu Yu Hakusho"><h4>Episódio 8</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-9.webp" alt="Imagem provisória do episódio 9 de Yu Yu Hakusho"><h4>Episódio 9</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-10.webp" alt="Imagem provisória do episódio 10 de Yu Yu Hakusho"><h4>Episódio 10</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-11.webp" alt="Imagem provisória do episódio 11 de Yu Yu Hakusho"><h4>Episódio 11</h4><p>Substituir pela capa do episódio</p></div>
+                        <div class="episodio"><img src="./episodios/episodio-12.webp" alt="Imagem provisória do episódio 12 de Yu Yu Hakusho"><h4>Episódio 12</h4><p>Substituir pela capa do episódio</p></div>
+                    </div>
+                </div></div>
+                <hr color="#1a1622">
+                <div class="recomendacoes"><h2>Recomendações para você</h2><div class="recomendacoes-conteudo">
+                    <a class="anime-recomendacao" href="#dragon-ball"><img src="../img/capas/capas-animes/dragon-ball.png" alt="Dragon Ball"><h3>Dragon Ball</h3><p>1986</p></a>
+                    <a class="anime-recomendacao" href="#naruto"><img src="../img/capas/capas-animes/naruto.png" alt="Naruto"><h3>Naruto</h3><p>2002</p></a>
+                    <a class="anime-recomendacao" href="#one-piece"><img src="../img/capas/capas-animes/one-piece.png" alt="One Piece"><h3>One Piece</h3><p>1999</p></a>
+                </div></div>
             </main>
         </section>
     </section>

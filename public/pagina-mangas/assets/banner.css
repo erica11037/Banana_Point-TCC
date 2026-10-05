@@ -117,6 +117,14 @@
     font-weight: bold;
     text-decoration: none;
 }
+.btn-selecao a.btn-ler{
+    display: inline-flex;
+    align-items: center;
+    color: var(--texto-branco);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
 .btn-lista{
     background-color: transparent;
     border: 2px var(--cor-ref-primaria70) solid;
@@ -145,3 +153,68 @@
     transform: scale(110%);
 }
 
+@media (max-width: 700px){
+    .manga-container:target .banner{
+            box-sizing: border-box;
+            height: auto;
+        min-height: 0;
+        padding: 5rem 1.25rem 2rem;
+    }
+
+    .manga-container:target .banner-info{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .manga-container:target .capa-banner{
+        width: 10rem;
+        height: 14rem;
+        object-fit: cover;
+    }
+
+    .manga-container:target .metadados{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .manga-container:target .info-item{
+        grid-template-columns: 8rem 1fr;
+    }
+
+    .manga-container:target .btn-selecao{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 1.5rem;
+    }
+
+    .manga-container:target .btn-selecao a{
+        padding: 0.75rem;
+    }
+
+    .manga-container:target .volumes-selecionar{
+        padding: 1.5rem;
+    }
+
+    .manga-container:target .volumes{
+        gap: 1.25rem;
+    }
+
+    .manga-container:target .info-volumes{
+        width: min(12rem, 42vw);
+    }
+
+    .manga-container:target .img-capa{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 12 / 17;
+        object-fit: cover;
+    }
+
+    .manga-container:target .saiba-mais-conteudo{
+        padding: 1.5rem;
+    }
+
+    .manga-container:target .informacoes-saiba-mais{
+        grid-template-columns: 1fr;
+    }
+}

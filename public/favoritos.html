@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/favoritos.css">
+    <title>Minha Lista | Banana Point</title>
+    <link rel="shortcut icon" href="./img/BananaPoint.ico" type="image/x-icon">
+    <script src="./assets/favoritos.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho-container">
+        <a href="./index.html"><img src="./img/BananaPoint.png" alt="Logo Banana Point" class="logo-img"></a>
+        <nav aria-label="Navegação principal">
+            <ul class="navegacao">
+                <li class="lista-navegacao"><a class="link-navegacao" href="./index.html">Início</a></li>
+                <li class="lista-navegacao"><a class="link-navegacao" href="./animes.html">Animes</a></li>
+                <li class="lista-navegacao"><a class="link-navegacao" href="./pagina-mangas/index.html#chainsaw-man">Mangás</a></li>
+            </ul>
+        </nav>
+        <div class="usuario-acoes">
+            <a href="./favoritos.html" aria-label="Minha Lista"><img src="./img/icones/icone-favoritos.png" alt=""></a>
+            <a href="./login.html" aria-label="Entrar na conta"><img src="./img/icones/icone-perfil.png" alt=""></a>
+        </div>
+    </header>
+
+    <main class="pagina-minha-lista" data-pagina-favoritos>
+        <div class="cabecalho-lista">
+            <img class="icone-titulo-lista" src="./img/icones/icone-favoritos.png" alt="">
+            <div>
+                <h1>Minha Lista</h1>
+                <p>Seus animes e mangás salvos para assistir ou ler depois.</p>
+            </div>
+        </div>
+
+        <section class="estado-vazio-lista" data-lista-vazia>
+            <div class="estado-vazio-conteudo">
+                <div class="marcador-vazio" aria-hidden="true">★</div>
+                <h2>Você ainda não adicionou nenhuma obra por aqui.</h2>
+                <p>Explore nosso catálogo e encontre seu próximo anime ou mangá favorito!</p>
+                <a class="botao-vazio" href="./animes.html">Explorar obras</a>
+            </div>
+        </section>
+
+        <section aria-label="Obras favoritas" data-conteudo-lista hidden>
+            <div class="controles-lista">
+                <div class="filtros-lista" role="group" aria-label="Filtrar por tipo">
+                    <button class="filtro-lista ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+                    <button class="filtro-lista" type="button" data-filtro="anime" aria-pressed="false">Animes</button>
+                    <button class="filtro-lista" type="button" data-filtro="manga" aria-pressed="false">Mangás</button>
+                </div>
+                <div class="busca-ordenacao">
+                    <label class="visualmente-oculto" for="pesquisa-favoritos">Pesquisar na Minha Lista</label>
+                    <input id="pesquisa-favoritos" type="search" placeholder="Buscar na minha lista..." data-pesquisa-favoritos>
+                    <label class="visualmente-oculto" for="ordenacao-favoritos">Ordenar favoritos</label>
+                    <select id="ordenacao-favoritos" data-ordenacao-favoritos>
+                        <option value="recentes">Adicionados recentemente</option>
+                        <option value="nome">Nome</option>
+                    </select>
+                </div>
+            </div>
+            <p class="contagem-favoritos" data-contagem-favoritos aria-live="polite">0 obras salvas</p>
+            <div class="estado-vazio-lista" data-filtro-vazio hidden>
+                <div class="estado-vazio-conteudo">
+                    <h2>Nenhuma obra encontrada</h2>
+                    <p>Não há favoritos que correspondam a este filtro ou pesquisa.</p>
+                </div>
+            </div>
+            <div class="grade-favoritos" data-grade-favoritos hidden></div>
+        </section>
+    </main>
+</body>
+</html>

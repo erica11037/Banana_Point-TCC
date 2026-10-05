@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/autenticacao.css">
+    <title>Entrar | Banana Point</title>
+    <link rel="shortcut icon" href="./img/BananaPoint.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="autenticacao">
+        <section class="autenticacao-conteudo">
+            <a href="./index.html" aria-label="Voltar para o início">
+                <img src="./img/BananaPoint.png" alt="Banana Point" class="autenticacao-logo">
+            </a>
+            <h1>Boas-vindas de volta!</h1>
+            <p class="autenticacao-introducao">Entre na sua conta para continuar.</p>
+            <form class="autenticacao-formulario" action="#" method="post">
+                <label class="campo-formulario" for="email">
+                    E-mail
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                </label>
+                <label class="campo-formulario" for="senha">
+                    Senha
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required>
+                </label>
+                <div class="autenticacao-opcoes">
+                    <label for="lembrar">
+                        <input type="checkbox" id="lembrar" name="lembrar">
+                        Lembrar de mim
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button class="botao-autenticacao" type="submit">Entrar</button>
+            </form>
+            <p class="autenticacao-alternativa">Ainda não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
+        </section>
+        <div class="autenticacao-painel-roxo" aria-hidden="true"></div>
+    </main>
+</body>
+</html>

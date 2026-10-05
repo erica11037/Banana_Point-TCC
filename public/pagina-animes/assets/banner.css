@@ -41,6 +41,13 @@
     height: auto;
 }
 
+.titulo-obra{
+    max-width: 38rem;
+    color: var(--texto-branco);
+    font-size: 3rem;
+    text-shadow: 0 2px 10px #000;
+}
+
 
 
 .btn-acoes{
@@ -89,7 +96,52 @@
     transform: scale(110%);
 }
 
+@media (max-width: 700px){
+    .anime-container:target .banner{
+        box-sizing: border-box;
+        height: auto;
+        min-height: 620px;
+        padding: 8rem 1.25rem 2rem;
+    }
 
+    .anime-container:target .banner-info{
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .anime-container:target .titulo-obra{
+        font-size: 2rem;
+    }
+
+    .anime-container:target .metadados-banner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .anime-container:target .btn-acoes{
+        flex-wrap: wrap;
+    }
+
+    .anime-container:target .btn-assistir,
+    .anime-container:target .btn-lista{
+        width: auto;
+        flex: 1 1 9rem;
+    }
+
+    .anime-container:target .conteudo-central{
+        padding: 2rem 1.25rem;
+    }
+
+    .anime-container:target .trailer-infos{
+        flex-direction: column;
+    }
+
+    .anime-container:target .metadados-anime{
+        gap: 1rem;
+        padding-left: 0;
+    }
+}
 
 
 .metadados-banner{

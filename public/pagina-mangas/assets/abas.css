@@ -87,6 +87,10 @@ input[id$="saiba"]:checked ~ .acoes-manga label[for$="saiba"] {
 .saiba-mais p{
     color: var(--cor-subtitulo-volume);
 }
+
+.saiba-mais a{
+    color: var(--cor-ref-primaria70);
+}
 .informacoes-saiba-mais{
     display: grid;
     grid-template-columns: 400px 1fr;

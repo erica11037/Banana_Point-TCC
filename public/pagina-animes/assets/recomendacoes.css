@@ -27,4 +27,33 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px){
+    .anime-container:target .recomendacoes-conteudo{
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .anime-container:target .anime-recomendacao img{
+        width: min(220px, 30vw);
+        height: auto;
+        aspect-ratio: 11 / 15;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 700px){
+    .recomendacoes-conteudo{
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .anime-recomendacao img{
+        width: min(220px, 42vw);
+        height: auto;
+        aspect-ratio: 11 / 15;
+        object-fit: cover;
+    }
 }

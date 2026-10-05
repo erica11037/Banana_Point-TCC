@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/autenticacao.css">
+    <title>Criar conta | Banana Point</title>
+    <link rel="shortcut icon" href="./img/BananaPoint.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="autenticacao">
+        <section class="autenticacao-conteudo">
+            <a href="./index.html" aria-label="Voltar para o início">
+                <img src="./img/BananaPoint.png" alt="Banana Point" class="autenticacao-logo">
+            </a>
+            <h1>Crie sua conta</h1>
+            <p class="autenticacao-introducao">Cadastre-se para acompanhar seus animes e mangás favoritos.</p>
+            <form class="autenticacao-formulario" action="#" method="post">
+                <label class="campo-formulario" for="nome">
+                    Nome
+                    <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" autocomplete="name" required>
+                </label>
+                <label class="campo-formulario" for="email">
+                    E-mail
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                </label>
+                <label class="campo-formulario" for="senha">
+                    Senha
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" autocomplete="new-password" minlength="8" required>
+                </label>
+                <label class="campo-formulario" for="confirmar-senha">
+                    Confirmar senha
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Digite a senha novamente" autocomplete="new-password" minlength="8" required>
+                </label>
+                <button class="botao-autenticacao" type="submit">Criar conta</button>
+            </form>
+            <p class="autenticacao-alternativa">Já tem uma conta? <a href="./login.html">Entre aqui</a></p>
+        </section>
+        <div class="autenticacao-painel-roxo" aria-hidden="true"></div>
+    </main>
+</body>
+</html>

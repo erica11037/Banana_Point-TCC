@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/volumes.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/abas.css">
-    <script src="../assets/script.js" defer></script>
+    <script src="../assets/favoritos.js" defer></script>
     <title>Banana Point | Categorias </title>
     <link rel="shortcut icon" href="../img/banana-_1_.ico" type="image/x-icon">
 </head>
@@ -29,8 +29,8 @@
                 <li class="lista-navegacao"><a class="link-navegacao" href="../mangas">Mangás</a></li>
             </ul>
         <div class="usuario-acoes">
-            <a href="#"><img src="../img/icones/icone-favoritos.png" alt="Favoritos"></a>
-            <a href="#"><img src="../img/icones/icone-perfil.png" alt="Perfil"></a>
+            <a href="../favoritos.html" aria-label="Minha Lista"><img src="../img/icones/icone-favoritos.png" alt="Favoritos"></a>
+            <a href="../login.html"><img src="../img/icones/icone-perfil.png" alt="Entrar na conta"></a>
         </div>
     </div>
     
@@ -39,7 +39,7 @@
     
     <!-------------------!!CHAINSAW MAN-------------------------->
     
-    <section id="chainsaw-man" class="manga-container">
+    <section id="chainsaw-man" class="manga-container" data-favorito-id="chainsaw-man-manga" data-favorito-tipo="manga" data-favorito-titulo="Chainsaw Man" data-favorito-capa="../img/capas/capas-manga/chainsawman/chainsaw-man-vol-1.png" data-favorito-descricao="Denji caça demônios para pagar as dívidas herdadas de seu pai. Após uma traição, ele se une a Pochita e passa a viver como o Homem-Motosserra." data-favorito-generos="Fantasia sombria · Ação · Comédia" data-favorito-detalhes="../pagina-mangas/index.html#chainsaw-man">
         <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner csm-banner" style="background-image: url(./banners/banner-chainsaw-man.png);">
             <div class="banner-info">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="btn-selecao">
                         <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
-                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                        <button type="button" class="btn-lista" data-favorito-botao><img src="../img/icones/icone-lista.png" alt="" width="17px">MINHA LISTA</button>
                     </div>
                 </div>
         
@@ -254,12 +254,363 @@
         </section>
     </section>
 
+    <section id="demon-slayer" class="manga-container" data-favorito-id="demon-slayer-manga" data-favorito-tipo="manga" data-favorito-titulo="Demon Slayer" data-favorito-capa="../img/capas/capas-manga/demon-slayer-vol1.png" data-favorito-descricao="Após um ataque de demônios à sua família, Tanjiro entra para o esquadrão de caçadores e busca uma forma de salvar sua irmã Nezuko." data-favorito-generos="Ação · Fantasia · Sobrenatural" data-favorito-detalhes="../pagina-mangas/index.html#demon-slayer">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/demon-slayer-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/demon-slayer-vol1.png" alt="Demon Slayer volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Demon Slayer</h1><h2>Koyoharu Gotouge</h2></div>
+                    <div class="btn-categorias"><button>Ação</button><button>Fantasia</button><button>Sobrenatural</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Concluído</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>23</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>205</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shueisha</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#demon-slayer">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#demon-slayer">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="demon-slayer-abas" id="demon-slayer-volumes" checked>
+            <input type="radio" name="demon-slayer-abas" id="demon-slayer-saiba">
+            <div class="acoes-manga">
+                <label for="demon-slayer-volumes" class="btn-aba">VOLUMES</label>
+                <label for="demon-slayer-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#demon-slayer">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/demon-slayer-vol1.png" alt="Demon Slayer volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>2016</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/demon-slayer-vol2.png" alt="Demon Slayer volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>2016</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/demon-slayer-vol3.png" alt="Demon Slayer volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>2016</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Após um ataque de demônios à sua família, Tanjiro entra para o esquadrão de caçadores e busca uma forma de salvar sua irmã Nezuko.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Koyoharu Gotouge</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>2016–2020</p></div><div class="informacoes-saiba-mais"><p>Status:</p><p>Concluído, 23 volumes e 205 capítulos</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://www.viz.com/demon-slayer-kimetsu-no-yaiba">VIZ — Demon Slayer</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="diarios-de-uma-apotecaria" class="manga-container" data-favorito-id="diarios-de-uma-apotecaria-manga" data-favorito-tipo="manga" data-favorito-titulo="Diários de uma Apotecária" data-favorito-capa="../img/capas/capas-manga/diarios-de-uma-apotecaria-vol1.png" data-favorito-descricao="Maomao trabalha no palácio imperial e usa seus conhecimentos de ervas, remédios e venenos para desvendar mistérios da corte." data-favorito-generos="Mistério · Drama · Histórico" data-favorito-detalhes="../pagina-mangas/index.html#diarios-de-uma-apotecaria">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/diarios-de-uma-apotecaria-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/diarios-de-uma-apotecaria-vol1.png" alt="Diários de uma Apotecária volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Diários de uma Apotecária</h1><h2>Itsuki Nanao e Nekokurage</h2></div>
+                    <div class="btn-categorias"><button>Mistério</button><button>Drama</button><button>Histórico</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>17 (julho de 2026)</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Square Enix</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#diarios-de-uma-apotecaria">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#diarios-de-uma-apotecaria">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="diarios-abas" id="diarios-volumes" checked>
+            <input type="radio" name="diarios-abas" id="diarios-saiba">
+            <div class="acoes-manga">
+                <label for="diarios-volumes" class="btn-aba">VOLUMES</label>
+                <label for="diarios-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#diarios-de-uma-apotecaria">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/diarios-de-uma-apotecaria-vol1.png" alt="Diários de uma Apotecária volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>2017</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/diarios-de-uma-apotecaria-vol2.png" alt="Diários de uma Apotecária volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>2018</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/diarios-de-uma-apotecaria-vol3.png" alt="Diários de uma Apotecária volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>2018</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Maomao trabalha no palácio imperial e usa seus conhecimentos de ervas, remédios e venenos para desvendar mistérios da corte.</p><p>O anime adapta a light novel de Natsu Hyūga. Esta página apresenta a versão em mangá ilustrada por Nekokurage; também existe outra adaptação em mangá, de Minoji Kurata.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Itsuki Nanao (adaptação) e Nekokurage (arte)</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>Em andamento desde 2017</p></div><div class="informacoes-saiba-mais"><p>Editora:</p><p>Square Enix</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://en.wikipedia.org/wiki/The_Apothecary_Diaries">Referência das adaptações</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="gachiakuta" class="manga-container" data-favorito-id="gachiakuta-manga" data-favorito-tipo="manga" data-favorito-titulo="Gachiakuta" data-favorito-capa="../img/capas/capas-manga/gachiakuta-vol1.png" data-favorito-descricao="Rudo vive em uma sociedade que descarta resíduos no Abismo. Após ser acusado de um crime e lançado nesse lugar, ele descobre poderes ligados aos objetos abandonados." data-favorito-generos="Ação · Fantasia · Aventura" data-favorito-detalhes="../pagina-mangas/index.html#gachiakuta">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/gachiakuta-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/gachiakuta-vol1.png" alt="Gachiakuta volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Gachiakuta</h1><h2>Kei Urana</h2></div>
+                    <div class="btn-categorias"><button>Ação</button><button>Fantasia</button><button>Aventura</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Kodansha</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#gachiakuta">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#gachiakuta">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="gachiakuta-abas" id="gachiakuta-volumes" checked>
+            <input type="radio" name="gachiakuta-abas" id="gachiakuta-saiba">
+            <div class="acoes-manga">
+                <label for="gachiakuta-volumes" class="btn-aba">VOLUMES</label>
+                <label for="gachiakuta-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#gachiakuta">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/gachiakuta-vol1.png" alt="Gachiakuta volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>2022</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/gachiakuta-vol2.png" alt="Gachiakuta volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>2022</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/gachiakuta-vol3.png" alt="Gachiakuta volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>2022</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Rudo vive em uma sociedade que descarta resíduos no Abismo. Após ser acusado de um crime e lançado nesse lugar, ele descobre poderes ligados aos objetos abandonados.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Kei Urana; design de graffiti de Hideyoshi Andou</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>Desde 2022, em andamento</p></div><div class="informacoes-saiba-mais"><p>Editora:</p><p>Kodansha</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://kodansha.us/series/gachiakuta/">Kodansha — Gachiakuta</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="dorohedoro" class="manga-container" data-favorito-id="dorohedoro-manga" data-favorito-tipo="manga" data-favorito-titulo="Dorohedoro" data-favorito-capa="../img/capas/capas-manga/dorohedoro-vol1.png" data-favorito-descricao="Caiman e Nikaido percorrem a cidade de Hole em busca do feiticeiro que transformou a cabeça de Caiman e apagou suas lembranças." data-favorito-generos="Ação · Fantasia sombria · Comédia" data-favorito-detalhes="../pagina-mangas/index.html#dorohedoro">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/dorohedoro-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/dorohedoro-vol1.png" alt="Dorohedoro volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Dorohedoro</h1><h2>Q Hayashida</h2></div>
+                    <div class="btn-categorias"><button>Ação</button><button>Fantasia sombria</button><button>Seinen</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Concluído</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>23</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>167 principais</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shogakukan</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#dorohedoro">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#dorohedoro">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="dorohedoro-abas" id="dorohedoro-volumes" checked>
+            <input type="radio" name="dorohedoro-abas" id="dorohedoro-saiba">
+            <div class="acoes-manga">
+                <label for="dorohedoro-volumes" class="btn-aba">VOLUMES</label>
+                <label for="dorohedoro-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#dorohedoro">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/dorohedoro-vol1.png" alt="Dorohedoro volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>2000</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/dorohedoro-vol2.png" alt="Dorohedoro volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>2001</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/dorohedoro-vol3.png" alt="Dorohedoro volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>2001</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Caiman e Nikaido percorrem a cidade de Hole em busca do feiticeiro que transformou a cabeça de Caiman e apagou suas lembranças.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Q Hayashida</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>2000–2018</p></div><div class="informacoes-saiba-mais"><p>Status:</p><p>Concluído, 23 volumes</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://www.viz.com/dorohedoro">VIZ — Dorohedoro</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="frieren-e-a-jornada" class="manga-container" data-favorito-id="frieren-e-a-jornada-manga" data-favorito-tipo="manga" data-favorito-titulo="Frieren e a Jornada para o Além" data-favorito-capa="../img/capas/capas-manga/frieren-e-a-jornada-para-o-alem-vol1.png" data-favorito-descricao="Depois da vitória sobre o Rei Demônio, a maga Frieren relembra a antiga equipe e inicia outra jornada para compreender os vínculos que criou." data-favorito-generos="Aventura · Fantasia · Drama" data-favorito-detalhes="../pagina-mangas/index.html#frieren-e-a-jornada">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/frieren-e-a-jornada-para-o-alem-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/frieren-e-a-jornada-para-o-alem-vol1.png" alt="Frieren volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Frieren e a Jornada para o Além</h1><h2>Kanehito Yamada e Tsukasa Abe</h2></div>
+                    <div class="btn-categorias"><button>Aventura</button><button>Fantasia</button><button>Drama</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shogakukan</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#frieren-e-a-jornada">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#frieren-e-a-jornada">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="frieren-abas" id="frieren-volumes" checked>
+            <input type="radio" name="frieren-abas" id="frieren-saiba">
+            <div class="acoes-manga">
+                <label for="frieren-volumes" class="btn-aba">VOLUMES</label>
+                <label for="frieren-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#frieren-e-a-jornada">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/frieren-e-a-jornada-para-o-alem-vol1.png" alt="Frieren volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>2020</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/frieren-e-a-jornada-para-o-alem-vol2.png" alt="Frieren volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>2020</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/frieren-e-a-jornada-para-o-alem-vol3.png" alt="Frieren volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>2020</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Depois da vitória sobre o Rei Demônio, a maga Frieren relembra a antiga equipe e inicia outra jornada para compreender os vínculos que criou.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Kanehito Yamada (história) e Tsukasa Abe (arte)</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>Desde 2020, em andamento</p></div><div class="informacoes-saiba-mais"><p>Editora:</p><p>Shogakukan</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://www.viz.com/frieren-beyond-journeys-end">VIZ — Frieren</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="dragon-ball" class="manga-container" data-favorito-id="dragon-ball-manga" data-favorito-tipo="manga" data-favorito-titulo="Dragon Ball" data-favorito-capa="../img/capas/capas-manga/dragon-ball-vol1.png" data-favorito-descricao="Goku acompanha Bulma em uma jornada para reunir as Esferas do Dragão, enfrentando adversários e participando de torneios de artes marciais." data-favorito-generos="Aventura · Artes marciais · Fantasia" data-favorito-detalhes="../pagina-mangas/index.html#dragon-ball">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/dragon-ball-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/dragon-ball-vol1.png" alt="Dragon Ball volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Dragon Ball</h1><h2>Akira Toriyama</h2></div>
+                    <div class="btn-categorias"><button>Aventura</button><button>Ação</button><button>Comédia</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Concluído</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>42</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>519</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shueisha</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#dragon-ball">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#dragon-ball">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="dragon-ball-abas" id="dragon-ball-volumes" checked>
+            <input type="radio" name="dragon-ball-abas" id="dragon-ball-saiba">
+            <div class="acoes-manga">
+                <label for="dragon-ball-volumes" class="btn-aba">VOLUMES</label>
+                <label for="dragon-ball-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#dragon-ball">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/dragon-ball-vol1.png" alt="Dragon Ball volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>1985</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/dragon-ball-vol2.png" alt="Dragon Ball volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>1985</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/dragon-ball-vol3.png" alt="Dragon Ball volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>1986</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Goku acompanha Bulma em uma jornada para reunir as Esferas do Dragão, enfrentando adversários e participando de torneios de artes marciais.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Akira Toriyama</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>1984–1995</p></div><div class="informacoes-saiba-mais"><p>Status:</p><p>Concluído, 42 volumes e 519 capítulos</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://www.viz.com/dragon-ball">VIZ — Dragon Ball</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="naruto" class="manga-container" data-favorito-id="naruto-manga" data-favorito-tipo="manga" data-favorito-titulo="Naruto" data-favorito-capa="../img/capas/capas-manga/naruto-vol1.png" data-favorito-descricao="Naruto cresce rejeitado por sua vila e determinado a se tornar Hokage, enquanto treina para ser um ninja e protege seus amigos." data-favorito-generos="Ação · Aventura · Artes marciais" data-favorito-detalhes="../pagina-mangas/index.html#naruto">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/naruto-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/naruto-vol1.png" alt="Naruto volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Naruto</h1><h2>Masashi Kishimoto</h2></div>
+                    <div class="btn-categorias"><button>Ação</button><button>Aventura</button><button>Ninja</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Concluído</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>72</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>700</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shueisha</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#naruto">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#naruto">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="naruto-abas" id="naruto-volumes" checked>
+            <input type="radio" name="naruto-abas" id="naruto-saiba">
+            <div class="acoes-manga">
+                <label for="naruto-volumes" class="btn-aba">VOLUMES</label>
+                <label for="naruto-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#naruto">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/naruto-vol1.png" alt="Naruto volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>1999</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/naruto-vol2.png" alt="Naruto volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>2000</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/naruto-vol3.png" alt="Naruto volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>2000</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Naruto cresce rejeitado por sua vila e determinado a se tornar Hokage, enquanto treina para ser um ninja e protege seus amigos.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Masashi Kishimoto</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>1999–2014</p></div><div class="informacoes-saiba-mais"><p>Status:</p><p>Concluído, 72 volumes e 700 capítulos</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://www.viz.com/naruto">VIZ — Naruto</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="one-piece" class="manga-container" data-favorito-id="one-piece-manga" data-favorito-tipo="manga" data-favorito-titulo="One Piece" data-favorito-capa="../img/capas/capas-manga/one-piece-vol1.png" data-favorito-descricao="Luffy reúne uma tripulação e navega pelos mares em busca do One Piece, o tesouro que pode torná-lo o Rei dos Piratas." data-favorito-generos="Aventura · Ação · Fantasia" data-favorito-detalhes="../pagina-mangas/index.html#one-piece">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/one-piece-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/one-piece-vol1.png" alt="One Piece volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>One Piece</h1><h2>Eiichiro Oda</h2></div>
+                    <div class="btn-categorias"><button>Aventura</button><button>Ação</button><button>Fantasia</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>115 (julho de 2026)</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>Em publicação</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shueisha</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#one-piece">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#one-piece">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="one-piece-abas" id="one-piece-volumes" checked>
+            <input type="radio" name="one-piece-abas" id="one-piece-saiba">
+            <div class="acoes-manga">
+                <label for="one-piece-volumes" class="btn-aba">VOLUMES</label>
+                <label for="one-piece-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#one-piece">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/one-piece-vol1.png" alt="One Piece volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>1997</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/one-piece-vol2.png" alt="One Piece volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>1998</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/one-piece-vol3.png" alt="One Piece volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>1998</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Luffy reúne uma tripulação e navega pelos mares em busca do One Piece, o tesouro que pode torná-lo o Rei dos Piratas.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Eiichiro Oda</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>Desde 1997, em andamento</p></div><div class="informacoes-saiba-mais"><p>Editora:</p><p>Shueisha</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://one-piece.com/">ONE PIECE.com</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
+    <section id="yu-yu-hakusho" class="manga-container" data-favorito-id="yu-yu-hakusho-manga" data-favorito-tipo="manga" data-favorito-titulo="Yu Yu Hakusho" data-favorito-capa="../img/capas/capas-manga/yu-yu-hakusho-vol1.png" data-favorito-descricao="Yusuke morre ao salvar uma criança e recebe a oportunidade de voltar à vida como detetive espiritual, enfrentando ameaças do mundo sobrenatural." data-favorito-generos="Ação · Aventura · Sobrenatural" data-favorito-detalhes="../pagina-mangas/index.html#yu-yu-hakusho">
+        <div class="voltar-btn"><a href="../animes.html"><img src="../img/icones/icone-voltar.png" alt="Voltar" width="40"></a></div>
+        <div class="banner" style="background-image: url(../img/capas/capas-manga/yu-yu-hakusho-vol1.png);">
+            <div class="banner-info">
+                <img class="capa-banner" src="../img/capas/capas-manga/yu-yu-hakusho-vol1.png" alt="Yu Yu Hakusho volume 1">
+                <div class="metadados">
+                    <div class="titulo-autor"><h1>Yu Yu Hakusho</h1><h2>Yoshihiro Togashi</h2></div>
+                    <div class="btn-categorias"><button>Ação</button><button>Aventura</button><button>Sobrenatural</button></div>
+                    <div class="informacoes-manga">
+                        <div class="info-item"><p>Status:</p><p>Concluído</p></div>
+                        <div class="info-item"><p>Volumes:</p><p>19</p></div>
+                        <div class="info-item"><p>Capítulos:</p><p>175</p></div>
+                        <div class="info-item"><p>Editora original:</p><p>Shueisha</p></div>
+                    </div>
+                    <div class="btn-selecao"><a class="btn-ler" href="#yu-yu-hakusho">VER VOLUMES</a><a class="btn-lista" href="../pagina-animes/index.html#yu-yu-hakusho">VER O ANIME</a></div>
+                </div>
+            </div>
+        </div>
+        <section class="container-manga">
+            <input type="radio" name="yu-yu-abas" id="yu-yu-volumes" checked>
+            <input type="radio" name="yu-yu-abas" id="yu-yu-saiba">
+            <div class="acoes-manga">
+                <label for="yu-yu-volumes" class="btn-aba">VOLUMES</label>
+                <label for="yu-yu-saiba" class="btn-aba">SAIBA MAIS</label>
+                <a class="btn-aba" href="../pagina-animes/index.html#yu-yu-hakusho">VER O ANIME</a>
+            </div>
+            <hr color="#1a1622">
+            <div class="volumes-selecionar"><div class="volumes">
+                <div class="info-volumes"><img src="../img/capas/capas-manga/yu-yu-hakusho-vol1.png" alt="Yu Yu Hakusho volume 1" class="img-capa"><div class="titulo-vol"><h2>Volume 1</h2><p>1990</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/yu-yu-hakusho-vol2.png" alt="Yu Yu Hakusho volume 2" class="img-capa"><div class="titulo-vol"><h2>Volume 2</h2><p>1991</p></div></div>
+                <div class="info-volumes"><img src="../img/capas/capas-manga/yu-yu-hakusho-vol3.png" alt="Yu Yu Hakusho volume 3" class="img-capa"><div class="titulo-vol"><h2>Volume 3</h2><p>1991</p></div></div>
+            </div></div>
+            <div class="saiba-mais"><div class="saiba-mais-conteudo">
+                <div class="sinopse"><h2>Sinopse</h2><p>Yusuke morre ao salvar uma criança e recebe a oportunidade de voltar à vida como detetive espiritual, enfrentando ameaças do mundo sobrenatural.</p></div>
+                <div class="informacoes"><h2>Informações</h2><div class="informacoes-saiba-mais"><p>Autoria:</p><p>Yoshihiro Togashi</p></div><div class="informacoes-saiba-mais"><p>Publicação:</p><p>1990–1994</p></div><div class="informacoes-saiba-mais"><p>Status:</p><p>Concluído, 19 volumes e 175 capítulos</p></div><div class="informacoes-saiba-mais"><p>Fonte:</p><p><a href="https://en.wikipedia.org/wiki/Yu_Yu_Hakusho">Referência do mangá</a></p></div></div>
+            </div></div>
+        </section>
+    </section>
+
     <!--==========================================-->
     <!--==========================================-->
     
     <!-------------------!!DANDADAN-------------------------->
 
-    <section id="dandadan" class="manga-container">
+    <section id="dandadan" class="manga-container" data-favorito-id="dandadan-manga" data-favorito-tipo="manga" data-favorito-titulo="Dandadan" data-favorito-capa="../img/capas/capas-manga/dandadan/dandadan-vol-1.png" data-favorito-descricao="Momo e Okarun se envolvem em encontros com fenômenos sobrenaturais e alienígenas, descobrindo poderes e enfrentando ameaças." data-favorito-generos="Ação · Comédia · Sobrenatural" data-favorito-detalhes="../pagina-mangas/index.html#dandadan">
         <div class="voltar-btn"><a href="../index.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner" style="background-image: url(./banners/banner-dandadan.jpeg);">
             <div class="banner-info">
@@ -299,7 +650,7 @@
                     </div>
                     <div class="btn-selecao">
                         <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
-                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                        <button type="button" class="btn-lista" data-favorito-botao><img src="../img/icones/icone-lista.png" alt="" width="17px">MINHA LISTA</button>
                     </div>
                 </div>
         
@@ -480,7 +831,7 @@
     
     <!-------------------!!JUJUTSU KAISEN-------------------------->
 
-    <section id="jujutsu-kaisen" class="manga-container">
+    <section id="jujutsu-kaisen" class="manga-container" data-favorito-id="jujutsu-kaisen-manga" data-favorito-tipo="manga" data-favorito-titulo="Jujutsu Kaisen" data-favorito-capa="../img/capas/capas-manga/jujutsu-kaisen/jujutsu-kaisen-vol1.png" data-favorito-descricao="Yuji Itadori entra em um mundo de feiticeiros e maldições após engolir um objeto amaldiçoado para salvar seus amigos." data-favorito-generos="Ação · Fantasia sombria" data-favorito-detalhes="../pagina-mangas/index.html#jujutsu-kaisen">
         <div class="voltar-btn"><a href="../index.html"><img src="../img/icones/icone-voltar.png" alt="voltar" width="40px"></a></div>
         <div class="banner" style="background-image: url(./banners/banner-jujutsu-kaisen.png);">
             <div class="banner-info">
@@ -520,7 +871,7 @@
                     </div>
                     <div class="btn-selecao">
                         <button class="btn-ler"><a href="#">LER DO INÍCIO</a></button>
-                        <button type="submit" class="btn-lista"><img src="../img/icones/icone-lista.png" alt="Adicionar" width="17px">MINHA LISTA</button>
+                        <button type="button" class="btn-lista" data-favorito-botao><img src="../img/icones/icone-lista.png" alt="" width="17px">MINHA LISTA</button>
                     </div>
                 </div>
         
@@ -699,7 +1050,6 @@
         </section>
     </section>
 
-    
     
     <!--==========================================-->
     <!--==========================================-->

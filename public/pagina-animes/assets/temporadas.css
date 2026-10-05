@@ -52,3 +52,36 @@
     padding-bottom: 1.5rem;
     
 }
+
+@media (max-width: 700px){
+    .anime-container:target .temporadas-conteudos{
+        padding: 12px;
+    }
+
+    .anime-container:target .episodios-container{
+        gap: 1rem;
+    }
+
+    .anime-container:target .episodio{
+        width: min(200px, 100%);
+    }
+
+    .anime-container:target .episodio img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5 / 3;
+        object-fit: cover;
+    }
+}
+
+#demon-slayer:target .episodio p,
+#diarios-de-uma-apotecaria:target .episodio p,
+#gachiakuta:target .episodio p,
+#dorohedoro:target .episodio p,
+#frieren-e-a-jornada:target .episodio p,
+#dragon-ball:target .episodio p,
+#naruto:target .episodio p,
+#one-piece:target .episodio p,
+#yu-yu-hakusho:target .episodio p{
+    display: none;
+}
