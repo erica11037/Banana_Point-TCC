@@ -1,8 +1,15 @@
+/* Oculta a barra de rolagem no Chrome, Safari, Edge e navegadores baseados em WebKit */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    
 }
 /*============================================*/
 /*==========DEFININDO AS 'RAIZES'=============*/
@@ -50,6 +57,7 @@
 
 body{
     background-color: var(--cor-fundo);
+   
 }
 
 

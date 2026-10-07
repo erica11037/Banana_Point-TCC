@@ -1,0 +1,35 @@
+
+.saiba-mais h2{
+    color: var(--texto-branco);
+    border-bottom: var(--cor-ref-primaria50) 3px solid;
+    width: 143px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+
+.saiba-mais p{
+    color: var(--cor-subtitulo-volume);
+}
+
+.saiba-mais a{
+    color: var(--cor-ref-primaria70);
+}
+.informacoes-saiba-mais{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 10px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.saiba-mais-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    color: var(--cor-ref-primaria70);
+}

@@ -25,10 +25,10 @@
     gap: 50px;
 }
 
-.anime-container{
+.anime-container, .filme-container{
     display: none;
 }
 
-.anime-container:target{
+.anime-container:target, .filme-container:target{
     display: block !important;
 }
