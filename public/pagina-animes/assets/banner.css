@@ -112,6 +112,7 @@
     display:flex;
     gap:30px;
     align-items:center;
+    justify-content: center;
 }
 
 .informacoes-obra{
@@ -176,7 +177,6 @@
     width:20rem;
     height:26rem;
     border-radius:20px;
-    object-fit:cover;
     box-shadow:0 10px 30px #000;
 }
 

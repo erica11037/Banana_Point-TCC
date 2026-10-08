@@ -27,7 +27,8 @@
 .episodio-info{
     background-color:var(--cor-ref-primaria40);
     padding: 10px 15px;
-    border-radius: 15px;
+    border-radius: 5px;
+    height: 55px;
 }
 .player-principal{
     flex:1;
@@ -49,7 +50,7 @@
     padding:1.5rem;
     box-sizing:border-box;
     background-color:#221935;
-    border-radius:12px;
+    border-radius:10px;
 }
 
 .lista-eps .titulo h3{
@@ -83,9 +84,6 @@
     transition:0.3s;
 }
 
-.ep-titulo .episodio-item:hover{
-    background-color:var(--cor-ref-primaria50);
-}
 
 .ep-titulo h4{
     margin:0;
