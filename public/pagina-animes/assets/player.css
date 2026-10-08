@@ -1,41 +1,225 @@
-.player-principal iframe{
-  width: 1200px;
-  height: 700px;
-  border: 4px solid var(--cor-ref-primaria50);
-  border-radius: 15px;
-  overflow: hidden;
-  box-sizing: border-box;
+.espaco{
+    height:100px;
 }
 
 .player-container{
-    display: none;
+    display:none;
 }
 
 .player-container:target{
-    display: block !important;
+    display:block !important;
 }
 
+.episodio{
+    display:flex;
+    gap:1.5rem;
+    width:100%;
+    padding:2rem 2.5rem;
+    box-sizing:border-box;
+}
 
-.player-principal{
-    
-    padding-left: 2rem;
+.episodio-item{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
+    
 }
-.episodio{
-    display: flex;
-    justify-content: space-between;
+.episodio-info{
+    background-color:var(--cor-ref-primaria40);
+    padding: 10px 15px;
+    border-radius: 15px;
 }
-.episodio h2{
-    color: var(--cor-ref-primaria50);
-}
-
-.espaco{
-    height: 140px;
-
+.player-principal{
+    flex:1;
+    min-width:0;
 }
 
-.titulo{
-    color: var(--cor-ref-primaria70);
+.player-principal iframe{
+    display:block;
+    width:100%;
+    height:650px;
+    border:3px solid var(--cor-ref-primaria50);
+    border-radius:12px;
+    box-sizing:border-box;
+}
+
+.lista-eps{
+    width:300px;
+    height:fit-content;
+    padding:1.5rem;
+    box-sizing:border-box;
+    background-color:#221935;
+    border-radius:12px;
+}
+
+.lista-eps .titulo h3{
+    margin:0;
+    color:var(--texto-branco);
+    font-size:1.1rem;
+}
+
+.lista-eps .titulo hr{
+    margin:1rem 0;
+    border:0;
+    border-top:2px solid #7456CE;
+}
+
+.ep-titulo{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+
+.ep-titulo .episodio-item{
+    display:flex;
+    
+    justify-content:space-between;
+    gap:0.5rem;
+    padding:1rem;
+    
+    border-radius:8px;
+    color:var(--texto-branco);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.ep-titulo .episodio-item:hover{
+    background-color:var(--cor-ref-primaria50);
+}
+
+.ep-titulo h4{
+    margin:0;
+    font-size:0.85rem;
+    line-height:1.4;
+}
+
+.episodio-ativo{
+    color:var(--texto-branco);
+}
+
+.informacoes-filme{
+    margin-top:1.5rem;
+    padding:1.5rem;
+    background-color:#11101a;
+    border:1px solid #272033;
+    border-radius:12px;
+    color:var(--texto-branco);
+}
+
+.informacoes-filme h1{
+    margin:0 0 1rem;
+    font-size:1.6rem;
+    font-weight:600;
+}
+
+.informacoes-filme .sub-infos{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1.2rem;
+}
+
+.informacoes-filme .tags{
+    display:flex;
+    gap:0.5rem;
+    margin:0;
+}
+
+.informacoes-filme .tags button{
+    padding:0.35rem 0.8rem;
+    border:1px solid #7456CE;
+    border-radius:20px;
+    background:none;
+    color:#a98cff;
+    font-weight:bold;
+    font-size:0.8rem;
+}
+
+.informacoes-filme .sinopse{
+    max-width:1000px;
+    margin:0;
+    color:var(--cor-texto-info);
+    line-height:1.6;
+    font-size:0.95rem;
+}
+
+.informacoes-filme .tags-2{
+    display:flex;
+    gap:0.6rem;
+    margin-top:0.2rem;
+}
+
+.informacoes-filme .tags-2 button{
+    padding:0.5rem 1rem;
+    border:1px solid #393044;
+    border-radius:7px;
+    background:#181520;
+    color:var(--texto-branco);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.informacoes-filme .tags-2 button:hover{
+    border-color:#7456CE;
+    background:#221935;
+}
+
+.informacoes-filme hr{
+    width:100%;
+    margin:0.5rem 0;
+    border:0;
+    border-top:1px solid #292331;
+}
+
+.metadados-filme{
+    width:100%;
+}
+
+.metadados-filme p{
+    margin:0;
+    color:var(--cor-texto-info);
+    font-size:0.85rem;
+    line-height:1.8;
+    white-space:pre-line;
+}
+
+@media (max-width:1000px){
+    .episodio{
+        padding:2rem;
+    }
+
+    .player-principal iframe{
+        height:500px;
+    }
+
+    .lista-eps{
+        width:250px;
+    }
+}
+
+@media (max-width:700px){
+    .episodio{
+        flex-direction:column;
+        padding:1.5rem 1rem;
+    }
+
+    .player-principal iframe{
+        height:300px;
+    }
+
+    .lista-eps{
+        width:100%;
+    }
+
+    .informacoes-filme{
+        padding:1rem;
+    }
+
+    .informacoes-filme h1{
+        font-size:1.3rem;
+    }
+
+    .informacoes-filme .tags-2{
+        flex-wrap:wrap;
+    }
 }
